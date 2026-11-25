@@ -1,0 +1,17 @@
+{
+  "title": "AROMA4EMS: Code and Data for Autonomous Reward Optimization via Multi-Agent Review for Energy Management Systems in Fuel Cell Electric Vehicles",
+  "upload_type": "software",
+  "description": "Code, data and run records for the manuscript \"AROMA4EMS: Autonomous Reward Optimization via Multi-Agent Review for Energy Management Systems in Fuel Cell Electric Vehicles\" (submitted to IEEE Transactions on Transportation Electrification). It contains the fuel cell electric vehicle simulation model, the soft actor-critic energy management system, the dynamic-programming and rule-based benchmarks, the AROMA4EMS multi-agent LLM reward-optimization workflow, the driving cycles and component maps, the records of the eight reward searches reported in the paper, the evaluation tables, and the notebooks that produce the paper figures.",
+  "creators": [
+    {"name": "Cha, Hyun Joon", "affiliation": "Department of Mechanical Engineering, Seoul National University"},
+    {"name": "Cha, Suk Won", "affiliation": "Department of Mechanical Engineering, Seoul National University"},
+    {"name": "Landay, James", "affiliation": "Department of Computer Science, Stanford University"}
+  ],
+  "keywords": [
+    "energy management system",
+    "fuel cell electric vehicle",
+    "large language model",
+    "multi-agent systems",
+    "reinforcement learning"
+  ]
+}

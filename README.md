@@ -1,5 +1,7 @@
 # AROMA4EMS
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24525205.svg)](https://doi.org/10.5281/zenodo.24525205)
+
 Code, data and run records for **AROMA4EMS: Autonomous Reward Optimization via Multi-Agent Review for Energy
 Management Systems in Fuel Cell Electric Vehicles** (H. J. Cha, S. W. Cha, J. Landay; manuscript submitted to
 IEEE Transactions on Transportation Electrification).
@@ -176,5 +178,17 @@ a 1,900 kg passenger FCEV.
   author  = {Cha, Hyun Joon and Cha, Suk Won and Landay, James},
   journal = {IEEE Transactions on Transportation Electrification},
   note    = {submitted}
+}
+```
+
+Code and data (all versions): [doi:10.5281/zenodo.24525205](https://doi.org/10.5281/zenodo.24525205)
+
+```bibtex
+@software{cha_aroma4ems_code,
+  title   = {{AROMA4EMS}: Code and Data for Autonomous Reward Optimization via Multi-Agent Review for Energy
+             Management Systems in Fuel Cell Electric Vehicles},
+  author  = {Cha, Hyun Joon and Cha, Suk Won and Landay, James},
+  doi     = {10.5281/zenodo.24525205},
+  url     = {https://github.com/ChaHyunJoon/AROMA4EMS}
 }
 ```
