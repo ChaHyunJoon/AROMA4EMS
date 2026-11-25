@@ -164,11 +164,6 @@ on an earlier revision of `aroma/candidate_validation.py`, `aroma/reward_terms.p
 `aroma/sequential_workflow.py`. The plant, SAC, benchmark and evaluation code is the same for all eight. Re-running
 the evaluated policies, the rule-based EMS and DP with this code reproduces the stored rollouts exactly.
 
-## Acknowledgements
-
-The simulation code started from [sicilyala/FCHEV-EMS](https://github.com/sicilyala/FCHEV-EMS) and was rescaled to
-a 1,900 kg passenger FCEV.
-
 ## Citation
 
 ```bibtex
