@@ -1,0 +1,12 @@
+{
+  "description": "Reference table for the paper notebooks: DP plus the efficient-band rule (p_off 0.95 kW, min_off 90 s).",
+  "rule_based": {
+    "policy": "efficient_band",
+    "p_off_kw": 0.95,
+    "min_off_s": 90.0,
+    "ramp_limit_kw": 10.0
+  },
+  "rb_source": "results/evaluation_runs/20261021_rb_efficient_band_poff095/runs/poff0.95_minoff90",
+  "dp_source": "results/evaluation_runs/20261013_motor_efficiency_ramp10/metrics_rb_dp.csv",
+  "cost_schema_source": "results/evaluation_runs/20261017_seq_v3_catalog_seed41_61_81_iter1to6_ep399_four_cycles/comparison_with_dp_rb.csv"
+}

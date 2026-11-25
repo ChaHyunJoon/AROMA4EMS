@@ -1,0 +1,176 @@
+# Iteration 1
+
+Decision: **baseline_trained**
+
+```json
+{
+  "iteration": 1,
+  "decision": "baseline_trained",
+  "candidate": {
+    "candidate_id": "17afbf80420cb9f947efdaac72a30bf9687444a44fa8df43fcfaa7ace533d083",
+    "seed": 41,
+    "status": "complete",
+    "final_ep399": {
+      "fuel_gkm": 11.267763405434842,
+      "fc_loss": 0.000321448999946794,
+      "batt_loss": 0.0005755324677042539,
+      "soc_in_bounds": 100.0,
+      "soc_min": 0.5427557043950955,
+      "soc_max": 0.7848309797753499
+    },
+    "operating_cost": {
+      "h2_usd": 7.88743438380439,
+      "fc_usd": 40.52416491381096,
+      "batt_usd": 4.52375541961513,
+      "degradation_usd": 45.047920333426084,
+      "total_usd": 52.935354717230474,
+      "unit": "USD per 100 km"
+    },
+    "fuel_breakdown": {
+      "raw_h2_gkm": 11.631791603870743,
+      "soc_correction_gkm": -0.36402819843590245,
+      "soc_final": 0.7848309797753499,
+      "soc_final_minus_initial": 0.1848309797753499,
+      "unaccepted_fc_kwh": 0.0008152458432027427,
+      "unaccepted_regen_kwh": 0.0
+    },
+    "tail_mean": {
+      "fuel_gkm": 11.170457610474221,
+      "fc_loss": 0.00031377086245310546,
+      "batt_loss": 0.0006188561520595687
+    },
+    "physics": {
+      "soc_initial": 0.6,
+      "soc_final": 0.7848309797753499,
+      "soc_final_minus_initial": 0.1848309797753499,
+      "soc_swing": 0.24207527538025442,
+      "soc_mean": 0.617364544552925,
+      "fc_power_kw_mean": 10.483248046730951,
+      "fc_abs_ramp_kw_s_mean": 1.777515488526801,
+      "fc_on_pct": 99.3897122929381,
+      "fc_start_stop_count": 16,
+      "fc_start_stop_soh_loss": 0.00031360000000000003,
+      "fc_low_power_count": 1226,
+      "fc_low_power_soh_loss": 4.291e-06,
+      "fc_high_power_soh_loss": 0.0,
+      "fc_load_change_count": 6,
+      "fc_load_change_soh_loss": 3.5580000000000005e-06,
+      "battery_throughput_kwh": 5.184095681160171,
+      "battery_ohmic_loss_kw_integral_kwh": 0.27789422272453795,
+      "fc_low_output_pct": 66.95727986050566,
+      "fc_regeneration_energy_kwh": 0.8552505442453315,
+      "fc_energy_efficiency": 0.4916866101093882
+    },
+    "regimes": {
+      "available": true,
+      "groups": {
+        "stopped": {
+          "steps": 408,
+          "available": true,
+          "duration_s": 408.0,
+          "hydrogen_g": 30.517653796098003,
+          "fc_energy_kwh": 0.33074161666203544,
+          "fc_energy_efficiency": 0.3251639490455275,
+          "fc_low_output_pct": 95.83333333333334,
+          "battery_throughput_kwh": 0.24331280242778283,
+          "battery_ohmic_loss_kwh": 0.004137849732290317,
+          "soc_mean": 0.6738289018583526,
+          "soc_delta": 0.14695804186610606
+        },
+        "low_load": {
+          "steps": 1444,
+          "available": true,
+          "duration_s": 1444.0,
+          "hydrogen_g": 139.08327013501957,
+          "fc_energy_kwh": 2.113033407752638,
+          "fc_energy_efficiency": 0.45582291748842835,
+          "fc_low_output_pct": 90.65096952908587,
+          "battery_throughput_kwh": 1.096613176921308,
+          "battery_ohmic_loss_kwh": 0.02261888693029128,
+          "soc_mean": 0.6403404885273243,
+          "soc_delta": 0.22003515943660346
+        },
+        "acceleration": {
+          "steps": 1055,
+          "available": true,
+          "duration_s": 1055.0,
+          "hydrogen_g": 212.09616976406218,
+          "fc_energy_kwh": 3.530129589097236,
+          "fc_energy_efficiency": 0.4993700699010711,
+          "fc_low_output_pct": 64.739336492891,
+          "battery_throughput_kwh": 2.1191501050811756,
+          "battery_ohmic_loss_kwh": 0.1489556543019183,
+          "soc_mean": 0.6187549593580652,
+          "soc_delta": -1.181980489272552
+        },
+        "regeneration": {
+          "steps": 677,
+          "available": true,
+          "duration_s": 677.0,
+          "hydrogen_g": 59.87113768520258,
+          "fc_energy_kwh": 0.8552505442453315,
+          "fc_energy_efficiency": 0.428588520741197,
+          "fc_low_output_pct": 90.10339734121122,
+          "battery_throughput_kwh": 1.823549474145427,
+          "battery_ohmic_loss_kwh": 0.10262315112999973,
+          "soc_mean": 0.6292175099750802,
+          "soc_delta": 1.0685839504939247
+        },
+        "high_speed": {
+          "steps": 922,
+          "available": true,
+          "duration_s": 922.0,
+          "hydrogen_g": 293.4874612994399,
+          "fc_energy_kwh": 5.053548931294675,
+          "fc_energy_efficiency": 0.5166204696804872,
+          "fc_low_output_pct": 13.774403470715836,
+          "battery_throughput_kwh": 0.8647975501555727,
+          "battery_ohmic_loss_kwh": 0.02709760646439159,
+          "soc_mean": 0.570431589661366,
+          "soc_delta": 0.03267610939938215
+        }
+      },
+      "missing_sensors": [],
+      "basis": "overlapping_input_regimes_diagnostic_only",
+      "thresholds": {
+        "stopped_m_s": 0.1,
+        "low_load_kw": 10.0,
+        "acceleration_m_s2": 0.1,
+        "high_speed_m_s": 22.2222222222
+      },
+      "note": "Groups overlap; raw H2 alone is not charge-sustaining fuel economy."
+    },
+    "development": null
+  },
+  "forked_from": {
+    "run_root": "results/aroma_runs/seed41_obscur_20261015_085321_825893252/search/20261015_085321_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed41_obscur_seq_v3_cost_iter6",
+    "iteration": 1,
+    "baseline_id": "17afbf80420cb9f947efdaac72a30bf9687444a44fa8df43fcfaa7ace533d083",
+    "source_conditions_id": "be089f991833188adc1a9217164df9855e395e362dbaace9a3bfb2d15ca8cd71",
+    "differing_proposal_side_sources": [
+      "candidate_validation.py",
+      "development_validation.py",
+      "reward_terms.py",
+      "sequential_workflow.py"
+    ],
+    "selection_policy_changed": true,
+    "differing_proposal_side_args": {
+      "reward_term_catalog": [
+        null,
+        true
+      ],
+      "cost_max_fuel_increase": [
+        0.02,
+        0.05
+      ],
+      "cost_max_soc_drift": [
+        null,
+        0.05
+      ]
+    }
+  }
+}
+```
+
+[Training log](results/aroma_runs/seed41_obscur_20261016_033309_216122644/search/20261016_033309_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed41_obscur_seq_v3_catalog_iter6/trials/1448de60885bcb6e19c0fd93/iter_001/train_log.log)
+[Evaluation records](results/aroma_runs/seed41_obscur_20261016_033309_216122644/search/20261016_033309_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed41_obscur_seq_v3_catalog_iter6/trials/1448de60885bcb6e19c0fd93/deterministic_evaluations.jsonl)

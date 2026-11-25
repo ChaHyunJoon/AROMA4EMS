@@ -1,0 +1,294 @@
+{
+  "cases": [
+    {
+      "cycle": "UDDS",
+      "p_off_kw": 0.95,
+      "min_off_s": 120,
+      "returncode": 0
+    },
+    {
+      "cycle": "UDDS",
+      "p_off_kw": 0.95,
+      "min_off_s": 60,
+      "returncode": 0
+    },
+    {
+      "cycle": "UDDS",
+      "p_off_kw": 0.95,
+      "min_off_s": 45,
+      "returncode": 0
+    },
+    {
+      "cycle": "UDDS",
+      "p_off_kw": 0.95,
+      "min_off_s": 90,
+      "returncode": 0
+    },
+    {
+      "cycle": "UDDS",
+      "p_off_kw": 0.95,
+      "min_off_s": 30,
+      "returncode": 0
+    },
+    {
+      "cycle": "UDDS",
+      "p_off_kw": 0.95,
+      "min_off_s": 0,
+      "returncode": 0
+    },
+    {
+      "cycle": "UDDS",
+      "p_off_kw": 0.95,
+      "min_off_s": 15,
+      "returncode": 0
+    },
+    {
+      "cycle": "WVUSUB",
+      "p_off_kw": 0.95,
+      "min_off_s": 45,
+      "returncode": 0
+    },
+    {
+      "cycle": "UDDS",
+      "p_off_kw": 0.95,
+      "min_off_s": 240,
+      "returncode": 0
+    },
+    {
+      "cycle": "WVUSUB",
+      "p_off_kw": 0.95,
+      "min_off_s": 15,
+      "returncode": 0
+    },
+    {
+      "cycle": "UDDS",
+      "p_off_kw": 0.95,
+      "min_off_s": 300,
+      "returncode": 0
+    },
+    {
+      "cycle": "WVUSUB",
+      "p_off_kw": 0.95,
+      "min_off_s": 90,
+      "returncode": 0
+    },
+    {
+      "cycle": "UDDS",
+      "p_off_kw": 0.95,
+      "min_off_s": 150,
+      "returncode": 0
+    },
+    {
+      "cycle": "WVUSUB",
+      "p_off_kw": 0.95,
+      "min_off_s": 30,
+      "returncode": 0
+    },
+    {
+      "cycle": "UDDS",
+      "p_off_kw": 0.95,
+      "min_off_s": 180,
+      "returncode": 0
+    },
+    {
+      "cycle": "UDDS",
+      "p_off_kw": 0.95,
+      "min_off_s": 75,
+      "returncode": 0
+    },
+    {
+      "cycle": "WVUSUB",
+      "p_off_kw": 0.95,
+      "min_off_s": 150,
+      "returncode": 0
+    },
+    {
+      "cycle": "WVUSUB",
+      "p_off_kw": 0.95,
+      "min_off_s": 240,
+      "returncode": 0
+    },
+    {
+      "cycle": "WVUSUB",
+      "p_off_kw": 0.95,
+      "min_off_s": 300,
+      "returncode": 0
+    },
+    {
+      "cycle": "WVUSUB",
+      "p_off_kw": 0.95,
+      "min_off_s": 75,
+      "returncode": 0
+    },
+    {
+      "cycle": "WVUSUB",
+      "p_off_kw": 0.95,
+      "min_off_s": 0,
+      "returncode": 0
+    },
+    {
+      "cycle": "WVUSUB",
+      "p_off_kw": 0.95,
+      "min_off_s": 120,
+      "returncode": 0
+    },
+    {
+      "cycle": "WVUSUB",
+      "p_off_kw": 0.95,
+      "min_off_s": 180,
+      "returncode": 0
+    },
+    {
+      "cycle": "WVUSUB",
+      "p_off_kw": 0.95,
+      "min_off_s": 60,
+      "returncode": 0
+    },
+    {
+      "cycle": "HWFET",
+      "p_off_kw": 0.95,
+      "min_off_s": 0,
+      "returncode": 0
+    },
+    {
+      "cycle": "HWFET",
+      "p_off_kw": 0.95,
+      "min_off_s": 15,
+      "returncode": 0
+    },
+    {
+      "cycle": "LA92",
+      "p_off_kw": 0.95,
+      "min_off_s": 30,
+      "returncode": 0
+    },
+    {
+      "cycle": "LA92",
+      "p_off_kw": 0.95,
+      "min_off_s": 45,
+      "returncode": 0
+    },
+    {
+      "cycle": "HWFET",
+      "p_off_kw": 0.95,
+      "min_off_s": 30,
+      "returncode": 0
+    },
+    {
+      "cycle": "LA92",
+      "p_off_kw": 0.95,
+      "min_off_s": 15,
+      "returncode": 0
+    },
+    {
+      "cycle": "LA92",
+      "p_off_kw": 0.95,
+      "min_off_s": 75,
+      "returncode": 0
+    },
+    {
+      "cycle": "LA92",
+      "p_off_kw": 0.95,
+      "min_off_s": 60,
+      "returncode": 0
+    },
+    {
+      "cycle": "HWFET",
+      "p_off_kw": 0.95,
+      "min_off_s": 45,
+      "returncode": 0
+    },
+    {
+      "cycle": "LA92",
+      "p_off_kw": 0.95,
+      "min_off_s": 90,
+      "returncode": 0
+    },
+    {
+      "cycle": "LA92",
+      "p_off_kw": 0.95,
+      "min_off_s": 0,
+      "returncode": 0
+    },
+    {
+      "cycle": "HWFET",
+      "p_off_kw": 0.95,
+      "min_off_s": 60,
+      "returncode": 0
+    },
+    {
+      "cycle": "LA92",
+      "p_off_kw": 0.95,
+      "min_off_s": 120,
+      "returncode": 0
+    },
+    {
+      "cycle": "HWFET",
+      "p_off_kw": 0.95,
+      "min_off_s": 75,
+      "returncode": 0
+    },
+    {
+      "cycle": "HWFET",
+      "p_off_kw": 0.95,
+      "min_off_s": 90,
+      "returncode": 0
+    },
+    {
+      "cycle": "HWFET",
+      "p_off_kw": 0.95,
+      "min_off_s": 120,
+      "returncode": 0
+    },
+    {
+      "cycle": "LA92",
+      "p_off_kw": 0.95,
+      "min_off_s": 150,
+      "returncode": 0
+    },
+    {
+      "cycle": "HWFET",
+      "p_off_kw": 0.95,
+      "min_off_s": 240,
+      "returncode": 0
+    },
+    {
+      "cycle": "HWFET",
+      "p_off_kw": 0.95,
+      "min_off_s": 180,
+      "returncode": 0
+    },
+    {
+      "cycle": "HWFET",
+      "p_off_kw": 0.95,
+      "min_off_s": 150,
+      "returncode": 0
+    },
+    {
+      "cycle": "HWFET",
+      "p_off_kw": 0.95,
+      "min_off_s": 300,
+      "returncode": 0
+    },
+    {
+      "cycle": "LA92",
+      "p_off_kw": 0.95,
+      "min_off_s": 300,
+      "returncode": 0
+    },
+    {
+      "cycle": "LA92",
+      "p_off_kw": 0.95,
+      "min_off_s": 240,
+      "returncode": 0
+    },
+    {
+      "cycle": "LA92",
+      "p_off_kw": 0.95,
+      "min_off_s": 180,
+      "returncode": 0
+    }
+  ],
+  "failed": [],
+  "source_hashes_unchanged": true
+}

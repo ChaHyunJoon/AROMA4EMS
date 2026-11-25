@@ -1,0 +1,363 @@
+{
+  "iteration": 6,
+  "control": {
+    "candidate_id": "660d8570c3e73f9cad5db4fa94604dac4c8f923e414676d1760bf92a494ec0eb",
+    "seed": 61,
+    "status": "complete",
+    "final_ep399": {
+      "fuel_gkm": 10.719725613624318,
+      "fc_loss": 0.00042764349997015394,
+      "batt_loss": 0.00046634978763171464,
+      "soc_in_bounds": 100.0,
+      "soc_min": 0.5644004883918264,
+      "soc_max": 0.6509156081956919
+    },
+    "operating_cost": {
+      "h2_usd": 7.503807929537023,
+      "fc_usd": 53.91180473412037,
+      "batt_usd": 3.6655662323457494,
+      "degradation_usd": 57.57737096646612,
+      "total_usd": 65.08117889600315,
+      "unit": "USD per 100 km"
+    },
+    "fuel_breakdown": {
+      "raw_h2_gkm": 10.755483454503839,
+      "soc_correction_gkm": -0.03575784087952028,
+      "soc_final": 0.6185507818845699,
+      "soc_final_minus_initial": 0.018550781884569933,
+      "unaccepted_fc_kwh": 0.0,
+      "unaccepted_regen_kwh": 0.0
+    },
+    "tail_mean": {
+      "fuel_gkm": 10.683347944895221,
+      "fc_loss": 0.000492779724972256,
+      "batt_loss": 0.00046153909333486454
+    },
+    "physics": {
+      "soc_initial": 0.6,
+      "soc_final": 0.6185507818845699,
+      "soc_final_minus_initial": 0.018550781884569933,
+      "soc_swing": 0.0865151198038655,
+      "soc_mean": 0.6016795905189263,
+      "fc_power_kw_mean": 9.98928444830163,
+      "fc_abs_ramp_kw_s_mean": 1.6115215776497624,
+      "fc_on_pct": 77.56466143562918,
+      "fc_start_stop_count": 21,
+      "fc_start_stop_soh_loss": 0.0004116,
+      "fc_low_power_count": 687,
+      "fc_low_power_soh_loss": 2.4044999999999996e-06,
+      "fc_high_power_soh_loss": 0.0,
+      "fc_load_change_count": 23,
+      "fc_load_change_soh_loss": 1.3639e-05,
+      "battery_throughput_kwh": 4.272321186513147,
+      "battery_ohmic_loss_kw_integral_kwh": 0.21537159137530928,
+      "fc_low_output_pct": 45.62627143272305,
+      "fc_regeneration_energy_kwh": 0.6089686670509872,
+      "fc_energy_efficiency": 0.5034758365358409
+    },
+    "regimes": {
+      "available": true,
+      "groups": {
+        "stopped": {
+          "steps": 408,
+          "available": true,
+          "duration_s": 408.0,
+          "hydrogen_g": 0.0,
+          "fc_energy_kwh": 0.0,
+          "fc_energy_efficiency": null,
+          "fc_low_output_pct": 0.0,
+          "battery_throughput_kwh": 0.0001999727845381161,
+          "battery_ohmic_loss_kwh": 3.9792224430251995e-08,
+          "soc_mean": 0.6260006640881809,
+          "soc_delta": -0.00012365057455809847
+        },
+        "low_load": {
+          "steps": 1444,
+          "available": true,
+          "duration_s": 1444.0,
+          "hydrogen_g": 85.91449135277946,
+          "fc_energy_kwh": 1.3719279989877704,
+          "fc_energy_efficiency": 0.4791037637205075,
+          "fc_low_output_pct": 51.73130193905817,
+          "battery_throughput_kwh": 0.6879104914230655,
+          "battery_ohmic_loss_kwh": 0.0137142471706455,
+          "soc_mean": 0.6108007238841999,
+          "soc_delta": -0.135522150759938
+        },
+        "acceleration": {
+          "steps": 1055,
+          "available": true,
+          "duration_s": 1055.0,
+          "hydrogen_g": 220.7509003188294,
+          "fc_energy_kwh": 3.7030563956373315,
+          "fc_energy_efficiency": 0.5032948993135234,
+          "fc_low_output_pct": 47.67772511848341,
+          "battery_throughput_kwh": 1.8563805098554955,
+          "battery_ohmic_loss_kwh": 0.10745273594818933,
+          "soc_mean": 0.5990634260968984,
+          "soc_delta": -1.0462846653461197
+        },
+        "regeneration": {
+          "steps": 677,
+          "available": true,
+          "duration_s": 677.0,
+          "hydrogen_g": 43.54425747709631,
+          "fc_energy_kwh": 0.6089686670509872,
+          "fc_energy_efficiency": 0.41959349312248306,
+          "fc_low_output_pct": 75.03692762186115,
+          "battery_throughput_kwh": 1.6227295384536407,
+          "battery_ohmic_loss_kwh": 0.09279467542037378,
+          "soc_mean": 0.6094983051564076,
+          "soc_delta": 0.9522884473072317
+        },
+        "high_speed": {
+          "steps": 922,
+          "available": true,
+          "duration_s": 922.0,
+          "hydrogen_g": 295.16346209426956,
+          "fc_energy_kwh": 5.082761505787584,
+          "fc_energy_efficiency": 0.5166564109971744,
+          "fc_low_output_pct": 14.20824295010846,
+          "battery_throughput_kwh": 0.7732138760899185,
+          "battery_ohmic_loss_kwh": 0.020982459703649987,
+          "soc_mean": 0.5863214547616523,
+          "soc_delta": 0.05418995679254823
+        }
+      },
+      "missing_sensors": [],
+      "basis": "overlapping_input_regimes_diagnostic_only",
+      "thresholds": {
+        "stopped_m_s": 0.1,
+        "low_load_kw": 10.0,
+        "acceleration_m_s2": 0.1,
+        "high_speed_m_s": 22.2222222222
+      },
+      "note": "Groups overlap; raw H2 alone is not charge-sustaining fuel economy."
+    },
+    "development": null
+  },
+  "decision": "replace_champion",
+  "experiment_plan": {
+    "name": "archive",
+    "iteration": 6
+  },
+  "edit_base": {
+    "mode": "fuel_leader",
+    "parent_reward_id": "f75cd9a11d016f0ed928054e2f156783e58e50db17cf0a1a71ef859e5d92ac48",
+    "selection_reason": "fuel_leader: rank 1 of 3"
+  },
+  "candidate": {
+    "candidate_id": "3f252a1af6ae59e8f9b7596d8c75990b445be217b5d6d05b1e60837fa4114a62",
+    "seed": 61,
+    "status": "complete",
+    "final_ep399": {
+      "fuel_gkm": 10.601284212689079,
+      "fc_loss": 0.00022771999996729075,
+      "batt_loss": 0.00043079659906930523,
+      "soc_in_bounds": 100.0,
+      "soc_min": 0.5570436398980069,
+      "soc_max": 0.6408260519108093
+    },
+    "operating_cost": {
+      "h2_usd": 7.420898948882355,
+      "fc_usd": 28.708015375300448,
+      "batt_usd": 3.3861138322312088,
+      "degradation_usd": 32.09412920753166,
+      "total_usd": 39.51502815641401,
+      "unit": "USD per 100 km"
+    },
+    "fuel_breakdown": {
+      "raw_h2_gkm": 10.558158262130997,
+      "soc_correction_gkm": 0.04312595055808253,
+      "soc_final": 0.5775469268684892,
+      "soc_final_minus_initial": -0.022453073131510792,
+      "unaccepted_fc_kwh": 7.745040850171729e-05,
+      "unaccepted_regen_kwh": 0.0
+    },
+    "tail_mean": {
+      "fuel_gkm": 10.565038203065994,
+      "fc_loss": 0.00025810933122102643,
+      "batt_loss": 0.000445788141068601
+    },
+    "physics": {
+      "soc_initial": 0.6,
+      "soc_final": 0.5775469268684892,
+      "soc_final_minus_initial": -0.022453073131510792,
+      "soc_swing": 0.08378241201280245,
+      "soc_mean": 0.5915466104321562,
+      "fc_power_kw_mean": 9.83803866580806,
+      "fc_abs_ramp_kw_s_mean": 1.6472833860873524,
+      "fc_on_pct": 71.31647776809066,
+      "fc_start_stop_count": 11,
+      "fc_start_stop_soh_loss": 0.00021559999999999998,
+      "fc_low_power_count": 752,
+      "fc_low_power_soh_loss": 2.632e-06,
+      "fc_high_power_soh_loss": 0.0,
+      "fc_load_change_count": 16,
+      "fc_load_change_soh_loss": 9.488000000000001e-06,
+      "battery_throughput_kwh": 3.8646702741341055,
+      "battery_ohmic_loss_kw_integral_kwh": 0.19739463748031313,
+      "fc_low_output_pct": 36.03603603603604,
+      "fc_regeneration_energy_kwh": 0.43779592404613027,
+      "fc_energy_efficiency": 0.5052715096833866
+    },
+    "regimes": {
+      "available": true,
+      "groups": {
+        "stopped": {
+          "steps": 408,
+          "available": true,
+          "duration_s": 408.0,
+          "hydrogen_g": 0.0,
+          "fc_energy_kwh": 0.0,
+          "fc_energy_efficiency": null,
+          "fc_low_output_pct": 0.0,
+          "battery_throughput_kwh": 0.0001999727845381161,
+          "battery_ohmic_loss_kwh": 3.992697509395829e-08,
+          "soc_mean": 0.6078666060538646,
+          "soc_delta": -0.00012386456692470293
+        },
+        "low_load": {
+          "steps": 1444,
+          "available": true,
+          "duration_s": 1444.0,
+          "hydrogen_g": 78.83538236175013,
+          "fc_energy_kwh": 1.3013977939445676,
+          "fc_energy_efficiency": 0.49528317403229544,
+          "fc_low_output_pct": 40.7202216066482,
+          "battery_throughput_kwh": 0.6657088747977782,
+          "battery_ohmic_loss_kwh": 0.014038243525008886,
+          "soc_mean": 0.5978947343441722,
+          "soc_delta": -0.16545272351151152
+        },
+        "acceleration": {
+          "steps": 1055,
+          "available": true,
+          "duration_s": 1055.0,
+          "hydrogen_g": 224.25449847843595,
+          "fc_energy_kwh": 3.808650936293255,
+          "fc_energy_efficiency": 0.5095592550412283,
+          "fc_low_output_pct": 28.62559241706161,
+          "battery_throughput_kwh": 1.775439134221155,
+          "battery_ohmic_loss_kwh": 0.10239465038315287,
+          "soc_mean": 0.5894768890045388,
+          "soc_delta": -0.9732459985328923
+        },
+        "regeneration": {
+          "steps": 677,
+          "available": true,
+          "duration_s": 677.0,
+          "hydrogen_g": 35.43202678764931,
+          "fc_energy_kwh": 0.43779592404613027,
+          "fc_energy_efficiency": 0.3707152096951605,
+          "fc_low_output_pct": 68.68537666174298,
+          "battery_throughput_kwh": 1.477592142416287,
+          "battery_ohmic_loss_kwh": 0.08615231811092695,
+          "soc_mean": 0.59819526327752,
+          "soc_delta": 0.8670785760632478
+        },
+        "high_speed": {
+          "steps": 922,
+          "available": true,
+          "duration_s": 922.0,
+          "hydrogen_g": 293.2111253147076,
+          "fc_energy_kwh": 5.054166195976807,
+          "fc_energy_efficiency": 0.5171705191320286,
+          "fc_low_output_pct": 12.25596529284165,
+          "battery_throughput_kwh": 0.644722487062642,
+          "battery_ohmic_loss_kwh": 0.015307890033747378,
+          "soc_mean": 0.5808894215316014,
+          "soc_delta": 0.04125285633471476
+        }
+      },
+      "missing_sensors": [],
+      "basis": "overlapping_input_regimes_diagnostic_only",
+      "thresholds": {
+        "stopped_m_s": 0.1,
+        "low_load_kw": 10.0,
+        "acceleration_m_s2": 0.1,
+        "high_speed_m_s": 22.2222222222
+      },
+      "note": "Groups overlap; raw H2 alone is not charge-sustaining fuel economy."
+    },
+    "development": null
+  },
+  "verdict": {
+    "status": "pass",
+    "checks": {
+      "total_cost_strictly_improved": true,
+      "charge_sustaining": true,
+      "fuel_within_guard": true,
+      "battery_within_guard": true
+    },
+    "checkpoint_episode": 399,
+    "cost_unit": "USD per 100 km",
+    "total_cost_delta_usd": -25.56615073958914,
+    "cost_delta_usd": {
+      "h2_usd": -0.08290898065466745,
+      "fc_usd": -25.203789358819925,
+      "batt_usd": -0.27945240011454064
+    },
+    "soc_drift": -0.022453073131510792,
+    "fuel_delta_gkm": -0.11844140093523947,
+    "fc_loss_delta": -0.00019992350000286319,
+    "batt_loss_delta": -3.555318856240941e-05,
+    "guards": {
+      "reference": "baseline",
+      "max_fuel_increase_fraction": 0.05,
+      "max_batt_increase_fraction": 0.1,
+      "fuel_gkm_max": 10.887113439498048,
+      "batt_loss_max": 0.0005258580204125286,
+      "soc_drift_abs_max": 0.05
+    },
+    "guard_reference": "baseline",
+    "comparison_basis": "matched_fresh_training",
+    "total_cost_delta_usd_vs_baseline": -33.64780586714307,
+    "fuel_delta_gkm_vs_baseline": 0.2326047465004617,
+    "fc_loss_delta_vs_baseline": -0.0002652490000181196,
+    "batt_loss_delta_vs_baseline": -4.725614676026613e-05
+  },
+  "observed_relation": {
+    "vs_champion": "strict_pareto",
+    "vs_baseline": "cost_tradeoff"
+  },
+  "reward_verdict": "inconclusive_single_run",
+  "tail": {
+    "basis": "single_run_tail_diagnostic_not_a_gate",
+    "window": [
+      360,
+      399
+    ],
+    "available": true,
+    "trial_tail_status": "all_rows_valid",
+    "rows": 40,
+    "coverage": 1.0,
+    "failed_rows": 0,
+    "failed_episodes": [],
+    "metrics": {
+      "fuel_gkm": {
+        "n": 40,
+        "mean": 10.565038203065994,
+        "std": 0.12755790912228165,
+        "slope_per_10_episodes": 0.050137877210426035,
+        "ep399_better_than_fraction": 0.35
+      },
+      "fc_loss": {
+        "n": 40,
+        "mean": 0.00025810933122102643,
+        "std": 6.662531508144402e-05,
+        "slope_per_10_episodes": -1.1872181289184728e-05,
+        "ep399_better_than_fraction": 0.65
+      },
+      "batt_loss": {
+        "n": 40,
+        "mean": 0.000445788141068601,
+        "std": 8.227552085908126e-05,
+        "slope_per_10_episodes": -1.459880896765005e-05,
+        "ep399_better_than_fraction": 0.45
+      }
+    },
+    "lucky_checkpoint": false
+  },
+  "reward_diff": "--- parent:f75cd9a11d01\n+++ candidate\n@@ -1,63 +1,69 @@\n def get_reward(self):\n     soc = float(self.SOC)\n     soc_t = float(self.SOC_target)\n-    soc_i = float(self.SOC_init)\n     soc_low, soc_high = self.soc_bounds\n \n     # -------------------------\n-    # Charge-sustaining terms (CATALOG): soc_anchor + drift_barrier\n+    # Charge-sustaining terms (CATALOG): soc_anchor + fc_surplus_charge\n     # soc_cost MUST equal the sum of the logged catalog terms.\n     # -------------------------\n \n-    # (1) soc_anchor (RESHAPED): asymmetric quadratic anchor\n-    # Penalize SOC deficit (below target) more than surplus to discourage deep discharge\n-    # that tends to lead to longer FC-off periods and then costly restarts.\n-    p = 2.0\n-    c_up = float(self.w_soc) * 0.75    # SOC above target (surplus) price\n-    c_down = float(self.w_soc) * 2.25  # SOC below target (deficit) price (stronger)\n+    # (1) soc_anchor (existing; keep the x7 scaling used in edit_base)\n+    soc_err = (np.abs(soc - soc_t)) ** 2\n+    w_soc_eff = np.where(\n+        (soc >= float(soc_high)) | (soc <= float(soc_low)),\n+        float(self.w_soc) * 10.0,\n+        float(self.w_soc),\n+    )\n+    term_soc_anchor_base = float(w_soc_eff * soc_err)\n+    term_soc_anchor = 7.0 * term_soc_anchor_base\n \n-    soc_above = max(0.0, soc - soc_t)\n-    soc_below = max(0.0, soc_t - soc)\n+    # (2) fc_surplus_charge (CATALOG; reshape strength to directly suppress the measured drift mechanism:\n+    # FC power pushed into the battery while SOC is already high)\n+    # FC power into the battery: max(0, min(-P_batt, P_mot - P_batt)) / 1000 [kW]\n+    P_batt_w = float(self.P_batt)   # + = discharge, - = charge\n+    P_mot_w = float(self.P_mot)\n+    P_fc_to_batt_w = max(0.0, min(-P_batt_w, P_mot_w - P_batt_w))\n+    P_fc_to_batt_kw = P_fc_to_batt_w / 1000.0\n \n-    term_soc_anchor = c_up * (soc_above ** p) + c_down * (soc_below ** p)\n+    # g(SOC): 0 at/below (SOC_target - m), linear ramp to 1 at SOC_target, nondecreasing above\n+    m = 0.05\n+    g_soc = max(0.0, soc - soc_t + m) / m\n \n-    # Optional multiplier outside SOC operating bounds (baseline behavior k=10)\n-    if (soc >= float(soc_high)) or (soc <= float(soc_low)):\n-        term_soc_anchor *= 10.0\n+    # Strengthened vs edit_base so that, on the edit_base rollout where FC->battery charging above target\n+    # is material (reward_id f75cd9... DRIFT FACTS: 0.310 kWh above target), the policy learns to avoid\n+    # \"idle FC -> charge battery\" as the way to avoid starts.\n+    c_surplus = 1.0  # reward-units per (kW-step) * g(SOC)\n+    term_fc_surplus_charge = float(c_surplus * g_soc * P_fc_to_batt_kw)\n \n-    # (2) drift_barrier (ADDED): flat near SOC_init, steep beyond a deadband\n-    # This makes sustained drift expensive per-step (not terminal-only),\n-    # preventing the learned \"FC idles into battery\" drift mode from being attractive.\n-    d0 = 0.03  # deadband (< soc_drift_abs_max=0.05)\n-    drift = abs(soc - soc_i)\n-    drift_excess = max(0.0, drift - d0)\n-\n-    # Sized to be a meaningful lever on the baseline rollout over the 1191 steps with |drift|>0.025:\n-    # if typical drift_excess ~ O(0.01), then per-step term ~ c_drift * 1e-4;\n-    # with c_drift=1e5 this is ~10 per step, or ~1.2e4 over 1191 steps (inside the stated 2.0e3..5.0e4 range).\n-    c_drift = 1.0e5\n-    term_drift_barrier = c_drift * (drift_excess ** 2.0)\n-\n-    soc_cost = float(term_soc_anchor + term_drift_barrier)\n+    soc_cost = float(term_soc_anchor + term_fc_surplus_charge)\n \n     # -------------------------\n-    # Price / wear terms (unchanged)\n+    # Price / wear terms\n     # -------------------------\n     h2_fcs = float(self.h2_fcs)\n     h2_batt = float(self.h2_batt)\n     h2_equal = float(self.h2_equal)\n \n     h2_cost = float(self.w_h2) * h2_fcs\n-    fcs_soh_cost = float(self.w_fc) * float(self.dSOH_FCS)\n+\n+    # fcs_soh_cost (RESHAPED): convex-in-dSOH_FCS to heavily discourage the start-driven spikes\n+    # seen in edit_base (reward_id f75cd9...: fc_start_s"
+}

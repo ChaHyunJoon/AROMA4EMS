@@ -1,0 +1,250 @@
+{
+  "records": [
+    {
+      "stage": "fuel_soc",
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5-20251001",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "temperature": 0.2,
+      "max_tokens": 700,
+      "prompt_chars": 64377,
+      "response_chars": 1827,
+      "usage": {
+        "input_tokens": 25712,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 700,
+        "service_tier": "standard",
+        "inference_geo": "not_available",
+        "speed": "standard",
+        "total_tokens": 26412
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": null,
+        "output_cost": null,
+        "total_cost": null,
+        "pricing_source": null,
+        "input_usd_per_1m_tokens": null,
+        "output_usd_per_1m_tokens": null,
+        "total_tokens": 26412
+      }
+    },
+    {
+      "stage": "fc_durability",
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5-20251001",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "temperature": 0.2,
+      "max_tokens": 700,
+      "prompt_chars": 64297,
+      "response_chars": 1689,
+      "usage": {
+        "input_tokens": 25690,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 700,
+        "service_tier": "standard",
+        "inference_geo": "not_available",
+        "speed": "standard",
+        "total_tokens": 26390
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": null,
+        "output_cost": null,
+        "total_cost": null,
+        "pricing_source": null,
+        "input_usd_per_1m_tokens": null,
+        "output_usd_per_1m_tokens": null,
+        "total_tokens": 26390
+      }
+    },
+    {
+      "stage": "battery_degradation",
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5-20251001",
+      "requested_model": "claude-haiku-4-5-20251001",
+      "temperature": 0.2,
+      "max_tokens": 700,
+      "prompt_chars": 64307,
+      "response_chars": 1731,
+      "usage": {
+        "input_tokens": 25692,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 700,
+        "service_tier": "standard",
+        "inference_geo": "not_available",
+        "speed": "standard",
+        "total_tokens": 26392
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": null,
+        "output_cost": null,
+        "total_cost": null,
+        "pricing_source": null,
+        "input_usd_per_1m_tokens": null,
+        "output_usd_per_1m_tokens": null,
+        "total_tokens": 26392
+      }
+    },
+    {
+      "stage": "reward_hacking",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "requested_model": "claude-sonnet-4-6",
+      "temperature": 0.2,
+      "max_tokens": 700,
+      "prompt_chars": 64236,
+      "response_chars": 1828,
+      "usage": {
+        "input_tokens": 25677,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 700,
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard",
+        "total_tokens": 26377
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": 0.077031,
+        "output_cost": 0.0105,
+        "total_cost": 0.087531,
+        "pricing_source": "code_default",
+        "input_usd_per_1m_tokens": 3.0,
+        "output_usd_per_1m_tokens": 15.0,
+        "total_tokens": 26377
+      }
+    },
+    {
+      "stage": "orchestrator",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "requested_model": "claude-sonnet-4-6",
+      "temperature": 0.2,
+      "max_tokens": 1200,
+      "prompt_chars": 75174,
+      "response_chars": 3509,
+      "usage": {
+        "input_tokens": 29886,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 1200,
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard",
+        "total_tokens": 31086
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": 0.089658,
+        "output_cost": 0.018,
+        "total_cost": 0.107658,
+        "pricing_source": "code_default",
+        "input_usd_per_1m_tokens": 3.0,
+        "output_usd_per_1m_tokens": 15.0,
+        "total_tokens": 31086
+      }
+    },
+    {
+      "stage": "orchestrator_spec",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "requested_model": "claude-sonnet-4-6",
+      "temperature": 0.2,
+      "max_tokens": 400,
+      "prompt_chars": 4717,
+      "response_chars": 1181,
+      "usage": {
+        "input_tokens": 1530,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 400,
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard",
+        "total_tokens": 1930
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": 0.00459,
+        "output_cost": 0.006,
+        "total_cost": 0.01059,
+        "pricing_source": "code_default",
+        "input_usd_per_1m_tokens": 3.0,
+        "output_usd_per_1m_tokens": 15.0,
+        "total_tokens": 1930
+      }
+    },
+    {
+      "stage": "proposal_1",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "requested_model": "claude-sonnet-4-6",
+      "temperature": 0.2,
+      "max_tokens": 4000,
+      "prompt_chars": 78521,
+      "response_chars": 8390,
+      "usage": {
+        "input_tokens": 31063,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 2988,
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard",
+        "total_tokens": 34051
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": 0.093189,
+        "output_cost": 0.04482,
+        "total_cost": 0.138009,
+        "pricing_source": "code_default",
+        "input_usd_per_1m_tokens": 3.0,
+        "output_usd_per_1m_tokens": 15.0,
+        "total_tokens": 34051
+      }
+    }
+  ],
+  "totals": {
+    "input_tokens": 165250,
+    "output_tokens": 7388,
+    "total_tokens": 172638,
+    "total_cost_usd": 0.343788,
+    "has_unpriced_calls": true
+  },
+  "pricing_note": "Set LLM_PRICE_USD_PER_1M_JSON to estimate USD cost, e.g. '{\"provider:model\":{\"input\":3,\"output\":15}}'. Rates are USD per 1M tokens."
+}

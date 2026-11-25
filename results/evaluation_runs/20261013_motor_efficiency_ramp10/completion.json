@@ -1,0 +1,45 @@
+{
+  "cases": [
+    {
+      "method": "Rule-based",
+      "cycle": "UDDS",
+      "returncode": 0
+    },
+    {
+      "method": "Rule-based",
+      "cycle": "WVUSUB",
+      "returncode": 0
+    },
+    {
+      "method": "Rule-based",
+      "cycle": "LA92",
+      "returncode": 0
+    },
+    {
+      "method": "Rule-based",
+      "cycle": "HWFET",
+      "returncode": 0
+    },
+    {
+      "method": "DP",
+      "cycle": "UDDS",
+      "returncode": 0
+    },
+    {
+      "method": "DP",
+      "cycle": "WVUSUB",
+      "returncode": 0
+    },
+    {
+      "method": "DP",
+      "cycle": "HWFET",
+      "returncode": 0
+    },
+    {
+      "method": "DP",
+      "cycle": "LA92",
+      "returncode": 0
+    }
+  ],
+  "source_hashes_unchanged": true
+}

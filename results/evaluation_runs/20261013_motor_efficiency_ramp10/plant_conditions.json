@@ -1,0 +1,17 @@
+{
+  "conditions": {
+    "w_soc": 500.0,
+    "soc0": 0.6,
+    "soc_target": 0.6,
+    "MODE": "CS",
+    "gamma": 0.995,
+    "ramp_limit_kw": 10.0,
+    "eq_h2_batt_coef": 0.0164,
+    "obs_norm": "fixed",
+    "obs_speed_scale": 40.0,
+    "obs_acc_scale": 4.0,
+    "obs_timing": "current",
+    "failure_cost_per_step": 1000.0,
+    "unserved_cost_per_kw": 50.0
+  }
+}

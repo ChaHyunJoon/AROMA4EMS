@@ -1,0 +1,236 @@
+{
+  "records": [
+    {
+      "stage": "fuel_soc",
+      "provider": "openai",
+      "model": "gpt-5-mini-2025-08-07",
+      "requested_model": "gpt-5-mini",
+      "temperature": 0.2,
+      "max_tokens": 700,
+      "prompt_chars": 40876,
+      "response_chars": 14459,
+      "usage": {
+        "input_tokens": 13583,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1792
+        },
+        "output_tokens": 4456,
+        "output_tokens_details": {
+          "reasoning_tokens": 704
+        },
+        "total_tokens": 18039
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": null,
+        "output_cost": null,
+        "total_cost": null,
+        "pricing_source": null,
+        "input_usd_per_1m_tokens": null,
+        "output_usd_per_1m_tokens": null,
+        "total_tokens": 18039
+      }
+    },
+    {
+      "stage": "fc_durability",
+      "provider": "openai",
+      "model": "gpt-5-mini-2025-08-07",
+      "requested_model": "gpt-5-mini",
+      "temperature": 0.2,
+      "max_tokens": 700,
+      "prompt_chars": 40796,
+      "response_chars": 9232,
+      "usage": {
+        "input_tokens": 13563,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3537,
+        "output_tokens_details": {
+          "reasoning_tokens": 1216
+        },
+        "total_tokens": 17100
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": null,
+        "output_cost": null,
+        "total_cost": null,
+        "pricing_source": null,
+        "input_usd_per_1m_tokens": null,
+        "output_usd_per_1m_tokens": null,
+        "total_tokens": 17100
+      }
+    },
+    {
+      "stage": "battery_degradation",
+      "provider": "openai",
+      "model": "gpt-5-mini-2025-08-07",
+      "requested_model": "gpt-5-mini",
+      "temperature": 0.2,
+      "max_tokens": 700,
+      "prompt_chars": 40806,
+      "response_chars": 8171,
+      "usage": {
+        "input_tokens": 13565,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1792
+        },
+        "output_tokens": 2884,
+        "output_tokens_details": {
+          "reasoning_tokens": 832
+        },
+        "total_tokens": 16449
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": null,
+        "output_cost": null,
+        "total_cost": null,
+        "pricing_source": null,
+        "input_usd_per_1m_tokens": null,
+        "output_usd_per_1m_tokens": null,
+        "total_tokens": 16449
+      }
+    },
+    {
+      "stage": "reward_hacking",
+      "provider": "openai",
+      "model": "gpt-5.2-2025-12-11",
+      "requested_model": "gpt-5.2",
+      "temperature": 0.2,
+      "max_tokens": 700,
+      "prompt_chars": 40735,
+      "response_chars": 6515,
+      "usage": {
+        "input_tokens": 13549,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1664
+        },
+        "output_tokens": 1866,
+        "output_tokens_details": {
+          "reasoning_tokens": 276
+        },
+        "total_tokens": 15415
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": null,
+        "output_cost": null,
+        "total_cost": null,
+        "pricing_source": null,
+        "input_usd_per_1m_tokens": null,
+        "output_usd_per_1m_tokens": null,
+        "total_tokens": 15415
+      }
+    },
+    {
+      "stage": "orchestrator",
+      "provider": "openai",
+      "model": "gpt-5.2-2025-12-11",
+      "requested_model": "gpt-5.2",
+      "temperature": 0.2,
+      "max_tokens": 1200,
+      "prompt_chars": 60656,
+      "response_chars": 2325,
+      "usage": {
+        "input_tokens": 19007,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1664
+        },
+        "output_tokens": 1241,
+        "output_tokens_details": {
+          "reasoning_tokens": 607
+        },
+        "total_tokens": 20248
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": null,
+        "output_cost": null,
+        "total_cost": null,
+        "pricing_source": null,
+        "input_usd_per_1m_tokens": null,
+        "output_usd_per_1m_tokens": null,
+        "total_tokens": 20248
+      }
+    },
+    {
+      "stage": "proposal_1",
+      "provider": "openai",
+      "model": "gpt-5.2-2025-12-11",
+      "requested_model": "gpt-5.2",
+      "temperature": 0.2,
+      "max_tokens": 4000,
+      "prompt_chars": 63114,
+      "response_chars": 4808,
+      "usage": {
+        "input_tokens": 19639,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1664
+        },
+        "output_tokens": 1946,
+        "output_tokens_details": {
+          "reasoning_tokens": 601
+        },
+        "total_tokens": 21585
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": null,
+        "output_cost": null,
+        "total_cost": null,
+        "pricing_source": null,
+        "input_usd_per_1m_tokens": null,
+        "output_usd_per_1m_tokens": null,
+        "total_tokens": 21585
+      }
+    },
+    {
+      "stage": "proposal_2",
+      "provider": "openai",
+      "model": "gpt-5.2-2025-12-11",
+      "requested_model": "gpt-5.2",
+      "temperature": 0.2,
+      "max_tokens": 4000,
+      "prompt_chars": 63539,
+      "response_chars": 4760,
+      "usage": {
+        "input_tokens": 19771,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 19072
+        },
+        "output_tokens": 2911,
+        "output_tokens_details": {
+          "reasoning_tokens": 1618
+        },
+        "total_tokens": 22682
+      },
+      "cost": {
+        "currency": "USD",
+        "input_cost": null,
+        "output_cost": null,
+        "total_cost": null,
+        "pricing_source": null,
+        "input_usd_per_1m_tokens": null,
+        "output_usd_per_1m_tokens": null,
+        "total_tokens": 22682
+      }
+    }
+  ],
+  "totals": {
+    "input_tokens": 112677,
+    "output_tokens": 18841,
+    "total_tokens": 131518,
+    "total_cost_usd": 0.0,
+    "has_unpriced_calls": true
+  },
+  "pricing_note": "Set LLM_PRICE_USD_PER_1M_JSON to estimate USD cost, e.g. '{\"provider:model\":{\"input\":3,\"output\":15}}'. Rates are USD per 1M tokens."
+}

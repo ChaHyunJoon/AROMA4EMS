@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.vscode/
+.ipynb_checkpoints/
+
+# outputs of new runs
+/runs/
+/FCHEV-EMS/DP_result/
+/FCHEV-EMS/eva_rule_based/
+/FCHEV-EMS/eval/
+/visualization/paper_figures/
+logs/
+events.out.*
+
+# large artifacts ship in the GitHub release bundle, not in git
+/results/**/*.mat
+/results/**/*.npz
+/results/**/models/

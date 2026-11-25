@@ -1,0 +1,1275 @@
+{
+  "candidate_id": "187b8f1ea4ae4ba8b0855af8f8741a1c4860a183c03e810145cc6243e5570d4e",
+  "episodes": 400,
+  "seed": 1,
+  "conditions_id": "ab02c5f053ca151a0b45dd2ccba0d2074efa3182047a4a4b7ec2eb9a47031444",
+  "contract_version": "reward_contract_v1",
+  "identity": {
+    "candidate_id": "187b8f1ea4ae4ba8b0855af8f8741a1c4860a183c03e810145cc6243e5570d4e",
+    "episodes": 400,
+    "seed": 1,
+    "conditions_id": "ab02c5f053ca151a0b45dd2ccba0d2074efa3182047a4a4b7ec2eb9a47031444",
+    "contract_version": "reward_contract_v1"
+  },
+  "status": "complete",
+  "chunk": {
+    "iteration": 1,
+    "start_episode": 0,
+    "end_episode": 399,
+    "log_path": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/61e368bf76f11a40e702c34d/iter_001/train_log.log",
+    "episode_data_dir": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/61e368bf76f11a40e702c34d/iter_001/episode_data",
+    "model_dir": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/61e368bf76f11a40e702c34d/models/iter_001/Standard_WLTC_WVUINTER/net_params",
+    "chunk_dir": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/61e368bf76f11a40e702c34d/iter_001",
+    "best_episode": 388,
+    "best_reward": -9502.675218056394
+  },
+  "metrics": {
+    "fuel_gkm": 10.524402182881689,
+    "fuel_early_tail_gkm": 10.511384917589295,
+    "fuel_late_tail_gkm": 10.53741944817408,
+    "min_in_bounds": 100.0,
+    "fc_loss": 0.000262286412479712,
+    "batt_loss": 0.0004383661714070702,
+    "soc_min": 0.5410308519112619,
+    "soc_max": 0.6469694597982623,
+    "tail_episodes": [
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399
+    ],
+    "fuel_metric_basis": "deterministic_paper_energy_tail10_v2",
+    "physical_evidence": {
+      "basis": "deterministic_rollouts",
+      "record_count": 40,
+      "available_count": 40,
+      "episodes": [
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399
+      ],
+      "scalars": {
+        "action_max": {
+          "mean": 0.9864549621939659,
+          "min": 0.9793263673782349,
+          "max": 0.9940681457519531,
+          "count": 40
+        },
+        "action_mean": {
+          "mean": 1.0265568596149467e-06,
+          "min": 5.562511166902484e-07,
+          "max": 1.964877491919186e-06,
+          "count": 40
+        },
+        "action_min": {
+          "mean": -0.9870085775852203,
+          "min": -0.9926404356956482,
+          "max": -0.9771313667297363,
+          "count": 40
+        },
+        "action_p95": {
+          "mean": 0.46506006419658663,
+          "min": 0.39499524235725403,
+          "max": 0.5570778846740723,
+          "count": 40
+        },
+        "battery_c_rate_max": {
+          "mean": 22.27186101352501,
+          "min": 21.50179286677488,
+          "max": 27.417257147907794,
+          "count": 40
+        },
+        "battery_c_rate_mean": {
+          "mean": 2.556485326822698,
+          "min": 2.4613013730159805,
+          "max": 2.633655243783377,
+          "count": 40
+        },
+        "battery_c_rate_min": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "battery_c_rate_p95": {
+          "mean": 9.833224962940061,
+          "min": 9.500174929604363,
+          "max": 10.262711291306214,
+          "count": 40
+        },
+        "battery_charge_kwh": {
+          "mean": 2.101012703188812,
+          "min": 2.022174488958406,
+          "max": 2.1674232554842043,
+          "count": 40
+        },
+        "battery_current_a_max": {
+          "mean": 130.00295418859895,
+          "min": 112.05503706745647,
+          "max": 178.21217146140066,
+          "count": 40
+        },
+        "battery_current_a_mean": {
+          "mean": -0.23348730534930384,
+          "min": -0.27283375179617225,
+          "max": -0.21094576227132314,
+          "count": 40
+        },
+        "battery_current_a_min": {
+          "mean": -139.81704490069438,
+          "min": -139.83775475452381,
+          "max": -139.76165363403672,
+          "count": 40
+        },
+        "battery_current_a_p95": {
+          "mean": 45.14584445213403,
+          "min": 42.757793224885,
+          "max": 46.51630438000462,
+          "count": 40
+        },
+        "battery_discharge_kwh": {
+          "mean": 1.8438027233683552,
+          "min": 1.775329084456592,
+          "max": 1.8943061144620033,
+          "count": 40
+        },
+        "battery_equivalent_hydrogen_g": {
+          "mean": -3.068131090690959,
+          "min": -3.5699749903955027,
+          "max": -2.761520275591102,
+          "count": 40
+        },
+        "battery_ohmic_loss_kw_integral_kwh": {
+          "mean": 0.20248723478990147,
+          "min": 0.18955347614326193,
+          "max": 0.21794504932916392,
+          "count": 40
+        },
+        "battery_ohmic_loss_kw_max": {
+          "mean": 5.949049988307228,
+          "min": 5.495821403557486,
+          "max": 9.014680989197492,
+          "count": 40
+        },
+        "battery_ohmic_loss_kw_mean": {
+          "mean": 0.2118436632501149,
+          "min": 0.19831226797900114,
+          "max": 0.22801574472100847,
+          "count": 40
+        },
+        "battery_ohmic_loss_kw_min": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "battery_ohmic_loss_kw_p95": {
+          "mean": 1.1495962118441436,
+          "min": 1.0715100222152079,
+          "max": 1.250423872284977,
+          "count": 40
+        },
+        "battery_power_kw_max": {
+          "mean": 27.258756757980382,
+          "min": 24.21717135873439,
+          "max": 34.80274835071201,
+          "count": 40
+        },
+        "battery_power_kw_mean": {
+          "mean": -0.26909500940239567,
+          "min": -0.28573720072069847,
+          "max": -0.2575778966702015,
+          "count": 40
+        },
+        "battery_power_kw_min": {
+          "mean": -40.0,
+          "min": -40.0,
+          "max": -40.0,
+          "count": 40
+        },
+        "battery_power_kw_p95": {
+          "mean": 10.596212989175282,
+          "min": 10.056573430993245,
+          "max": 10.911147568306708,
+          "count": 40
+        },
+        "battery_soh_final": {
+          "mean": 0.9995616338285929,
+          "min": 0.9995475429010066,
+          "max": 0.9995781501670282,
+          "count": 40
+        },
+        "battery_step_soh_loss_sum": {
+          "mean": 0.00043836617140749013,
+          "min": 0.0004218498329732268,
+          "max": 0.0004524570989906851,
+          "count": 40
+        },
+        "battery_throughput_kwh": {
+          "mean": 3.9448154265571675,
+          "min": 3.797503573414998,
+          "max": 4.061729369946207,
+          "count": 40
+        },
+        "battery_voltage_v_max": {
+          "mean": 286.4372710838642,
+          "min": 286.3066753531946,
+          "max": 286.71008355023616,
+          "count": 40
+        },
+        "battery_voltage_v_mean": {
+          "mean": 247.26840023604845,
+          "min": 247.17550853807182,
+          "max": 247.46246955688136,
+          "count": 40
+        },
+        "battery_voltage_v_min": {
+          "mean": 210.32096977822886,
+          "min": 195.0723686002749,
+          "max": 215.9254636577544,
+          "count": 40
+        },
+        "battery_voltage_v_p95": {
+          "mean": 260.661931292418,
+          "min": 260.09305909549283,
+          "max": 261.0787408408171,
+          "count": 40
+        },
+        "distance_km": {
+          "mean": 48.22825896186276,
+          "min": 48.22825896186276,
+          "max": 48.22825896186276,
+          "count": 40
+        },
+        "fc_abs_ramp_kw_s_max": {
+          "mean": 9.88984876871109,
+          "min": 9.820061922073364,
+          "max": 9.940681457519531,
+          "count": 40
+        },
+        "fc_abs_ramp_kw_s_mean": {
+          "mean": 1.5267142663297837,
+          "min": 1.4099144689377325,
+          "max": 1.7308433693917553,
+          "count": 40
+        },
+        "fc_abs_ramp_kw_s_min": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "fc_abs_ramp_kw_s_p95": {
+          "mean": 6.698242828249931,
+          "min": 5.986887216567993,
+          "max": 7.373535633087158,
+          "count": 40
+        },
+        "fc_energy_efficiency": {
+          "mean": 0.5126796483865161,
+          "min": 0.5098566256839075,
+          "max": 0.5145792122153026,
+          "count": 40
+        },
+        "fc_high_power_count": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "fc_high_power_soh_loss": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "fc_hydrogen_g": {
+          "mean": 510.6417249855027,
+          "min": 508.40137421852205,
+          "max": 513.9905386770272,
+          "count": 40
+        },
+        "fc_load_change_count": {
+          "mean": 14.0,
+          "min": 10.0,
+          "max": 20.0,
+          "count": 40
+        },
+        "fc_load_change_soh_loss": {
+          "mean": 8.302e-06,
+          "min": 5.93e-06,
+          "max": 1.186e-05,
+          "count": 40
+        },
+        "fc_low_output_pct": {
+          "mean": 45.17000871839582,
+          "min": 43.18512060447544,
+          "max": 47.399011915140946,
+          "count": 40
+        },
+        "fc_low_power_count": {
+          "mean": 466.975,
+          "min": 359.0,
+          "max": 585.0,
+          "count": 40
+        },
+        "fc_low_power_soh_loss": {
+          "mean": 1.6344124999999996e-06,
+          "min": 1.2565e-06,
+          "max": 2.0475e-06,
+          "count": 40
+        },
+        "fc_on_pct": {
+          "mean": 77.35033420517291,
+          "min": 75.85004359197907,
+          "max": 79.30834059866318,
+          "count": 40
+        },
+        "fc_power_kw_max": {
+          "mean": 66.82780287889909,
+          "min": 61.774544063955545,
+          "max": 69.83387685439084,
+          "count": 40
+        },
+        "fc_power_kw_mean": {
+          "mean": 9.985306538292974,
+          "min": 9.961612173327866,
+          "max": 10.006794570822647,
+          "count": 40
+        },
+        "fc_power_kw_min": {
+          "mean": 0.004509979888098314,
+          "min": 0.0014678423758596182,
+          "max": 0.009619572665542364,
+          "count": 40
+        },
+        "fc_power_kw_p95": {
+          "mean": 30.609545795014128,
+          "min": 29.663027466158383,
+          "max": 31.556802622508258,
+          "count": 40
+        },
+        "fc_ramp_exceed_steps": {
+          "mean": 14.0,
+          "min": 10.0,
+          "max": 20.0,
+          "count": 40
+        },
+        "fc_ramp_threshold_kw_s": {
+          "mean": 9.5,
+          "min": 9.5,
+          "max": 9.5,
+          "count": 40
+        },
+        "fc_regeneration_energy_kwh": {
+          "mean": 0.7188884239096272,
+          "min": 0.6545963052837412,
+          "max": 0.753450248380904,
+          "count": 40
+        },
+        "fc_soh_final": {
+          "mean": 0.9997377135875205,
+          "min": 0.9996945715000167,
+          "max": 0.999777017500018,
+          "count": 40
+        },
+        "fc_start_stop_count": {
+          "mean": 12.875,
+          "min": 11.0,
+          "max": 15.0,
+          "count": 40
+        },
+        "fc_start_stop_soh_loss": {
+          "mean": 0.00025235000000000004,
+          "min": 0.00021560000000000004,
+          "max": 0.000294,
+          "count": 40
+        },
+        "fc_step_soh_loss_sum": {
+          "mean": 0.0002622864125,
+          "min": 0.0002229825,
+          "max": 0.0003054285,
+          "count": 40
+        },
+        "fc_total_variation_kw": {
+          "mean": 5253.4237904407855,
+          "min": 4851.5156876147375,
+          "max": 5955.83203407703,
+          "count": 40
+        },
+        "motor_power_kw_integral_kwh": {
+          "mean": 7.229757866075826,
+          "min": 7.229757866075826,
+          "max": 7.229757866075826,
+          "count": 40
+        },
+        "motor_power_kw_max": {
+          "mean": 54.92397794622914,
+          "min": 54.92397794622914,
+          "max": 54.92397794622914,
+          "count": 40
+        },
+        "motor_power_kw_mean": {
+          "mean": 7.563826886914552,
+          "min": 7.563826886914552,
+          "max": 7.563826886914552,
+          "count": 40
+        },
+        "motor_power_kw_min": {
+          "mean": -34.065639686211625,
+          "min": -34.065639686211625,
+          "max": -34.065639686211625,
+          "count": 40
+        },
+        "motor_power_kw_p95": {
+          "mean": 27.398672271443484,
+          "min": 27.398672271443484,
+          "max": 27.398672271443484,
+          "count": 40
+        },
+        "power_constraint_failed_steps": {
+          "mean": 3.725,
+          "min": 2.0,
+          "max": 5.0,
+          "count": 40
+        },
+        "soc_above_steps": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "soc_below_steps": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "soc_final": {
+          "mean": 0.6343346075943141,
+          "min": 0.6310198447852817,
+          "max": 0.6401205529884884,
+          "count": 40
+        },
+        "soc_final_minus_initial": {
+          "mean": 0.034334607594314184,
+          "min": 0.031019844785281747,
+          "max": 0.04012055298848838,
+          "count": 40
+        },
+        "soc_final_minus_target": {
+          "mean": 0.034334607594314184,
+          "min": 0.031019844785281747,
+          "max": 0.04012055298848838,
+          "count": 40
+        },
+        "soc_first_logged": {
+          "mean": 0.6007284710344409,
+          "min": 0.6004570946496328,
+          "max": 0.6009800580893129,
+          "count": 40
+        },
+        "soc_initial": {
+          "mean": 0.6,
+          "min": 0.6,
+          "max": 0.6,
+          "count": 40
+        },
+        "soc_max": {
+          "mean": 0.6414557569391702,
+          "min": 0.637645997694144,
+          "max": 0.6469694597982623,
+          "count": 40
+        },
+        "soc_mean": {
+          "mean": 0.6011874088908055,
+          "min": 0.5986309975701114,
+          "max": 0.6063157998908336,
+          "count": 40
+        },
+        "soc_min": {
+          "mean": 0.5596411626474569,
+          "min": 0.5410308519112619,
+          "max": 0.5686661475583932,
+          "count": 40
+        },
+        "soc_p95": {
+          "mean": 0.6359756996418213,
+          "min": 0.6332380304324157,
+          "max": 0.6414098171986817,
+          "count": 40
+        },
+        "soc_swing": {
+          "mean": 0.08181459429171326,
+          "min": 0.07365263704017888,
+          "max": 0.09732066509660176,
+          "count": 40
+        },
+        "unaccepted_power_kw_integral_kwh": {
+          "mean": 0.002066717214116284,
+          "min": 0.0008227718206301325,
+          "max": 0.0031798307407134175,
+          "count": 40
+        },
+        "unaccepted_power_kw_max": {
+          "mean": 3.8474337122610636,
+          "min": 2.0877603542926337,
+          "max": 5.825941474035808,
+          "count": 40
+        },
+        "unaccepted_power_kw_mean": {
+          "mean": 0.0021622150452829483,
+          "min": 0.0008607900477385867,
+          "max": 0.003326762762734177,
+          "count": 40
+        },
+        "unaccepted_power_kw_min": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "unaccepted_power_kw_p95": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "unserved_power_kw_integral_kwh": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "unserved_power_kw_max": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "unserved_power_kw_mean": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "unserved_power_kw_min": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        },
+        "unserved_power_kw_p95": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "count": 40
+        }
+      },
+      "representative_rollouts": {
+        "largest_fc_loss": {
+          "episode": 377,
+          "fuel_gkm": 10.479601692501584,
+          "fc_loss": 0.0003054284999832735,
+          "soc_in_bounds": 100.0,
+          "trajectory_path": null,
+          "checkpoint_path": null,
+          "witness_steps": [
+            {
+              "step": 0,
+              "time_s": 0.0,
+              "soc": 0.600647480091279,
+              "p_fc_kw": 5.120841860771179,
+              "ramp_kw_s": 5.120841860771179,
+              "p_batt_kw": -3.807158533103634
+            },
+            {
+              "step": 861,
+              "time_s": 861.0,
+              "soc": 0.5771871129002278,
+              "p_fc_kw": 20.604367535561323,
+              "ramp_kw_s": 9.908597469329834,
+              "p_batt_kw": 7.492351651432142
+            },
+            {
+              "step": 862,
+              "time_s": 862.0,
+              "soc": 0.5750104443388748,
+              "p_fc_kw": 30.528409760445356,
+              "ramp_kw_s": 9.924042224884033,
+              "p_batt_kw": 11.815804470315543
+            },
+            {
+              "step": 868,
+              "time_s": 868.0,
+              "soc": 0.5755434371548557,
+              "p_fc_kw": 24.574652295559645,
+              "ramp_kw_s": -9.778789281845093,
+              "p_batt_kw": -0.5372744325148887
+            },
+            {
+              "step": 1544,
+              "time_s": 1544.0,
+              "soc": 0.5810372515911997,
+              "p_fc_kw": 51.57890536880586,
+              "ramp_kw_s": -9.789937138557434,
+              "p_batt_kw": -7.902156149684386
+            },
+            {
+              "step": 1623,
+              "time_s": 1623.0,
+              "soc": 0.5697586597497574,
+              "p_fc_kw": 42.174966349848546,
+              "ramp_kw_s": -9.868372678756714,
+              "p_batt_kw": -8.020805892327568
+            },
+            {
+              "step": 1885,
+              "time_s": 1885.0,
+              "soc": 0.6410489220967319,
+              "p_fc_kw": 0.025857840082608163,
+              "ramp_kw_s": 0.021556615829467773,
+              "p_batt_kw": -0.041967895008438574
+            },
+            {
+              "step": 2585,
+              "time_s": 2585.0,
+              "soc": 0.5653494629500243,
+              "p_fc_kw": 30.78926946473075,
+              "ramp_kw_s": -0.08943513035774231,
+              "p_batt_kw": 2.769062014509491
+            },
+            {
+              "step": 3440,
+              "time_s": 3440.0,
+              "soc": 0.6336709432513663,
+              "p_fc_kw": 0.022302390134427696,
+              "ramp_kw_s": 0.0,
+              "p_batt_kw": 0.0
+            }
+          ]
+        },
+        "lowest_soc_in_bounds": {
+          "episode": 360,
+          "fuel_gkm": 10.502971653604078,
+          "fc_loss": 0.0002848139999811483,
+          "soc_in_bounds": 100.0,
+          "trajectory_path": null,
+          "checkpoint_path": null,
+          "witness_steps": [
+            {
+              "step": 0,
+              "time_s": 0.0,
+              "soc": 0.6006531238848868,
+              "p_fc_kw": 5.161227583885193,
+              "ramp_kw_s": 5.161227583885193,
+              "p_batt_kw": -3.8409109856667176
+            },
+            {
+              "step": 861,
+              "time_s": 861.0,
+              "soc": 0.5787924705292982,
+              "p_fc_kw": 20.210151132196188,
+              "ramp_kw_s": 9.827383160591125,
+              "p_batt_kw": 7.810837936737336
+            },
+            {
+              "step": 862,
+              "time_s": 862.0,
+              "soc": 0.5765329460305663,
+              "p_fc_kw": 30.003271158784628,
+              "ramp_kw_s": 9.79312002658844,
+              "p_batt_kw": 12.239329832898614
+            },
+            {
+              "step": 868,
+              "time_s": 868.0,
+              "soc": 0.5763079068214665,
+              "p_fc_kw": 26.54211586341262,
+              "ramp_kw_s": -9.823287725448608,
+              "p_batt_kw": -2.121840297348255
+            },
+            {
+              "step": 1573,
+              "time_s": 1573.0,
+              "soc": 0.557754380630141,
+              "p_fc_kw": 59.22736102947965,
+              "ramp_kw_s": -0.28191516175866127,
+              "p_batt_kw": 2.2756565414096768
+            },
+            {
+              "step": 1727,
+              "time_s": 1727.0,
+              "soc": 0.5694650301014444,
+              "p_fc_kw": 13.883187491446733,
+              "ramp_kw_s": -9.789755940437317,
+              "p_batt_kw": -6.950761079768828
+            },
+            {
+              "step": 1885,
+              "time_s": 1885.0,
+              "soc": 0.6403044591975744,
+              "p_fc_kw": 0.011758524924516678,
+              "ramp_kw_s": 0.0058707594871521,
+              "p_batt_kw": -0.041967895008438574
+            },
+            {
+              "step": 2077,
+              "time_s": 2077.0,
+              "soc": 0.5738556801013256,
+              "p_fc_kw": 18.76934228814207,
+              "ramp_kw_s": 9.822779297828674,
+              "p_batt_kw": 3.136100604759764
+            },
+            {
+              "step": 3440,
+              "time_s": 3440.0,
+              "soc": 0.633886307294449,
+              "p_fc_kw": 0.03831111593171954,
+              "ramp_kw_s": 0.0,
+              "p_batt_kw": 0.0
+            }
+          ]
+        },
+        "largest_fuel": {
+          "episode": 392,
+          "fuel_gkm": 10.59211165076777,
+          "fc_loss": 0.00028356349997460395,
+          "soc_in_bounds": 100.0,
+          "trajectory_path": null,
+          "checkpoint_path": null,
+          "witness_steps": [
+            {
+              "step": 0,
+              "time_s": 0.0,
+              "soc": 0.6009247247293074,
+              "p_fc_kw": 7.145818471908569,
+              "ramp_kw_s": 7.145818471908569,
+              "p_batt_kw": -5.4767935264382945
+            },
+            {
+              "step": 861,
+              "time_s": 861.0,
+              "soc": 0.5765072805414789,
+              "p_fc_kw": 22.17441150918603,
+              "ramp_kw_s": 9.872610569000244,
+              "p_batt_kw": 6.221239550515206
+            },
+            {
+              "step": 1320,
+              "time_s": 1320.0,
+              "soc": 0.5757934891749577,
+              "p_fc_kw": 18.886996863875538,
+              "ramp_kw_s": 9.83094573020935,
+              "p_batt_kw": 3.145039654743463
+            },
+            {
+              "step": 1623,
+              "time_s": 1623.0,
+              "soc": 0.5710449453689618,
+              "p_fc_kw": 42.353945545619354,
+              "ramp_kw_s": -9.910231232643127,
+              "p_batt_kw": -8.165756150919245
+            },
+            {
+              "step": 1684,
+              "time_s": 1684.0,
+              "soc": 0.572201834424051,
+              "p_fc_kw": 48.20975985028781,
+              "ramp_kw_s": 9.804543852806091,
+              "p_batt_kw": 6.107916402683666
+            },
+            {
+              "step": 1727,
+              "time_s": 1727.0,
+              "soc": 0.5710372991741777,
+              "p_fc_kw": 13.595590848708525,
+              "ramp_kw_s": -9.888684153556824,
+              "p_batt_kw": -6.7167067765638375
+            },
+            {
+              "step": 1885,
+              "time_s": 1885.0,
+              "soc": 0.6425140934713138,
+              "p_fc_kw": 0.04713531234301627,
+              "ramp_kw_s": 0.038115084171295166,
+              "p_batt_kw": -0.041967895008438574
+            },
+            {
+              "step": 2801,
+              "time_s": 2801.0,
+              "soc": 0.5636243002777827,
+              "p_fc_kw": 14.251799277262762,
+              "ramp_kw_s": 0.0626731663942337,
+              "p_batt_kw": 0.6057712913668347
+            },
+            {
+              "step": 3440,
+              "time_s": 3440.0,
+              "soc": 0.6352541980814609,
+              "p_fc_kw": 0.03713688114657998,
+              "ramp_kw_s": 0.0,
+              "p_batt_kw": 0.0
+            }
+          ]
+        }
+      },
+      "missing_sensors": []
+    }
+  },
+  "reward_source": "def get_reward(self):\n    soc = float(self.SOC)\n    soc_low, soc_high = self.soc_bounds\n\n    # ---------- Charge-sustaining family (soc_cost = sum of catalog terms) ----------\n    # Catalog term: soc_anchor (baseline symmetric quadratic anchor with bounds multiplier)\n    soc_tgt = float(self.SOC_target)\n    soc_err = float(np.abs(soc - soc_tgt)) ** 2\n    out_of_bounds = (soc >= float(soc_high)) or (soc <= float(soc_low))\n    w_soc_eff = float(self.w_soc) * (10.0 if out_of_bounds else 1.0)\n    term_soc_anchor = w_soc_eff * soc_err\n    self.info[\"term_soc_anchor\"] = float(term_soc_anchor)\n\n    # Catalog term: drift_barrier (ADDED per orchestrator; symmetric quadratic barrier around SOC_init)\n    soc_init = float(self.SOC_init)\n    d0 = 0.03  # deadband (< soc_drift_abs_max=0.05), keeps small drift cheap but prices guard-violating drift\n    p = 2.0\n    drift_excess = float(np.maximum(0.0, np.abs(soc - soc_init) - d0))\n    c_drift = 20000.0  # sized to be several units/step when |drift| approaches the guard\n    term_drift_barrier = c_drift * (drift_excess ** p)\n    self.info[\"term_drift_barrier\"] = float(term_drift_barrier)\n\n    soc_cost = float(term_soc_anchor + term_drift_barrier)\n\n    # ---------- Core operating-cost proxy terms (existing) ----------\n    h2_fcs, h2_batt, h2_equal = self.h2_fcs, self.h2_batt, self.h2_equal\n    h2_cost = float(self.w_h2) * float(h2_fcs)\n    fcs_soh_cost = float(self.w_fc) * float(self.dSOH_FCS)\n    batt_soh_cost = float(self.w_batt) * float(self.dSOH_batt)\n\n    # ---------- Extra catalog price terms (existing in edit_base): fc_efficiency_gap, batt_ohmic ----------\n    # Catalog term: fc_efficiency_gap\n    P_fcs_kw = float(self.P_FCS)\n    h2_fcs_g = float(h2_fcs)\n    eta_ref = 0.602  # peak measured band (10-15 kW) from EFFICIENCY FACTS\n    eta = float(P_fcs_kw / (120.0 * h2_fcs_g)) if h2_fcs_g > 0.0 else 0.0\n    eta_gap_frac = float(np.maximum(0.0, eta_ref - eta) / eta_ref) if h2_fcs_g > 0.0 else 0.0\n    c_eff_gap = 5.0\n    term_fc_efficiency_gap = c_eff_gap * h2_fcs_g * eta_gap_frac\n    self.info[\"term_fc_efficiency_gap\"] = float(term_fc_efficiency_gap)\n\n    # Catalog term: batt_ohmic\n    P_batt_loss_kw = float(self.P_batt_loss_kw)\n    c_batt_ohmic = 2.0\n    term_batt_ohmic = c_batt_ohmic * float(np.maximum(0.0, P_batt_loss_kw))\n    self.info[\"term_batt_ohmic\"] = float(term_batt_ohmic)\n\n    # Total objective\n    objective_cost = (\n        soc_cost\n        + h2_cost\n        + fcs_soh_cost\n        + batt_soh_cost\n        + term_fc_efficiency_gap\n        + term_batt_ohmic\n    )\n    reward = float(-objective_cost)\n\n    in_bounds = (float(soc_low) < soc < float(soc_high))\n    self.info.update(\n        {\n            \"EMS_reward\": float(reward),\n            \"h2_fcs\": float(h2_fcs),\n            \"h2_batt\": float(h2_batt),\n            \"h2_equal\": float(h2_equal),\n            \"soc_cost\": float(soc_cost),\n            \"h2_cost\": float(h2_cost),\n            \"fcs_soh_cost\": float(fcs_soh_cost),\n            \"batt_soh_cost\": float(batt_soh_cost),\n            \"objective_cost\": float(objective_cost),\n            \"soc_in_bounds\": int(in_bounds),\n        }\n    )\n    return reward\n",
+  "final_metrics": {
+    "episode": 399,
+    "fuel_gkm": 10.556665388962326,
+    "soc_in_bounds": 100.0,
+    "soc_min": 0.5633687875388056,
+    "soc_max": 0.6413181083241309,
+    "fc_loss": 0.0002264129999761666,
+    "batt_loss": 0.00042894649844260613,
+    "power_violations": {
+      "trace_available": true,
+      "steps_by_reason": {
+        "battery_soc_limit": 0,
+        "traction_motor_limit": 0,
+        "unserved_power": 0,
+        "unaccepted_fc_power": 4
+      },
+      "unserved_kwh": 0.0,
+      "unserved_peak_kw": 0.0,
+      "unaccepted_fc_kwh": 0.0027975643530234783,
+      "unaccepted_regen_kwh": 0.0,
+      "unaccepted_peak_kw": 4.23835134076419
+    },
+    "physical_evidence": {
+      "scalars": {
+        "soc_initial": 0.6,
+        "soc_first_logged": 0.6007367204674494,
+        "soc_final": 0.6348431033679202,
+        "soc_final_minus_initial": 0.03484310336792018,
+        "soc_final_minus_target": 0.03484310336792018,
+        "soc_swing": 0.07794932078532535,
+        "soc_below_steps": 0,
+        "soc_above_steps": 0,
+        "soc_min": 0.5633687875388056,
+        "soc_mean": 0.6006792156275059,
+        "soc_max": 0.6413181083241309,
+        "soc_p95": 0.6360135254449184,
+        "fc_power_kw_min": 0.003849165514111519,
+        "fc_power_kw_mean": 9.983984565805397,
+        "fc_power_kw_max": 67.57810752198566,
+        "fc_power_kw_p95": 30.842314898618497,
+        "fc_abs_ramp_kw_s_min": 0.0,
+        "fc_abs_ramp_kw_s_mean": 1.554989291953871,
+        "fc_abs_ramp_kw_s_max": 9.918290376663208,
+        "fc_abs_ramp_kw_s_p95": 6.552676558494568,
+        "fc_on_pct": 77.85527462946817,
+        "fc_ramp_threshold_kw_s": 9.5,
+        "fc_ramp_exceed_steps": 15,
+        "fc_total_variation_kw": 5350.71815361327,
+        "fc_start_stop_count": 11,
+        "fc_start_stop_soh_loss": 0.00021560000000000004,
+        "fc_low_power_count": 548,
+        "fc_low_power_soh_loss": 1.918e-06,
+        "fc_high_power_count": 0,
+        "fc_high_power_soh_loss": 0.0,
+        "fc_load_change_count": 15,
+        "fc_load_change_soh_loss": 8.895e-06,
+        "fc_step_soh_loss_sum": 0.00022641300000000002,
+        "battery_step_soh_loss_sum": 0.000428946498442995,
+        "battery_power_kw_min": -40.0,
+        "battery_power_kw_mean": -0.2647061705795482,
+        "battery_power_kw_max": 28.082871422515435,
+        "battery_power_kw_p95": 10.819368396751011,
+        "battery_discharge_kwh": 1.7966836115796787,
+        "battery_charge_kwh": 2.0496985929586304,
+        "battery_throughput_kwh": 3.8463822045383096,
+        "battery_current_a_min": -139.82434700197663,
+        "battery_current_a_mean": -0.23694525394052277,
+        "battery_current_a_max": 133.74207180887026,
+        "battery_current_a_p95": 46.272303630101376,
+        "battery_c_rate_min": 0.0,
+        "battery_c_rate_mean": 2.494163189094848,
+        "battery_c_rate_max": 21.511438000304096,
+        "battery_c_rate_p95": 9.637181533209265,
+        "battery_voltage_v_min": 209.7473926231165,
+        "battery_voltage_v_mean": 247.25041635268897,
+        "battery_voltage_v_max": 286.40165118573134,
+        "battery_voltage_v_p95": 260.3510726101372,
+        "action_min": -0.9918290376663208,
+        "action_mean": 9.827281265045643e-07,
+        "action_max": 0.9845371246337891,
+        "action_p95": 0.44556722044944763,
+        "unserved_power_kw_min": 0.0,
+        "unserved_power_kw_mean": 0.0,
+        "unserved_power_kw_max": 0.0,
+        "unserved_power_kw_p95": 0.0,
+        "unserved_power_kw_integral_kwh": 0.0,
+        "unaccepted_power_kw_min": 0.0,
+        "unaccepted_power_kw_mean": 0.0029268328017682424,
+        "unaccepted_power_kw_max": 4.23835134076419,
+        "unaccepted_power_kw_p95": 0.0,
+        "unaccepted_power_kw_integral_kwh": 0.0027975643530234783,
+        "power_constraint_failed_steps": 4,
+        "fc_hydrogen_g": 512.2540096013224,
+        "motor_power_kw_min": -34.065639686211625,
+        "motor_power_kw_mean": 7.563826886914552,
+        "motor_power_kw_max": 54.92397794622914,
+        "motor_power_kw_p95": 27.398672271443484,
+        "motor_power_kw_integral_kwh": 7.229757866075826,
+        "battery_ohmic_loss_kw_min": 0.0,
+        "battery_ohmic_loss_kw_mean": 0.20658173812777328,
+        "battery_ohmic_loss_kw_max": 5.511514691427433,
+        "battery_ohmic_loss_kw_p95": 1.1065647600774255,
+        "battery_ohmic_loss_kw_integral_kwh": 0.1974577113604633,
+        "fc_low_output_pct": 45.306596919500144,
+        "fc_regeneration_energy_kwh": 0.6941485052086683,
+        "fc_energy_efficiency": 0.5109235176735343,
+        "battery_equivalent_hydrogen_g": -3.124417448713731,
+        "distance_km": 48.22825896186276,
+        "fc_soh_final": 0.9997735870000238,
+        "battery_soh_final": 0.9995710535015574
+      },
+      "regimes": {
+        "available": true,
+        "groups": {
+          "stopped": {
+            "steps": 408,
+            "available": true,
+            "duration_s": 408.0,
+            "hydrogen_g": 1.4590768434829395,
+            "fc_energy_kwh": 0.026784729811116216,
+            "fc_energy_efficiency": 0.5507744572525928,
+            "fc_low_output_pct": 2.696078431372549,
+            "battery_throughput_kwh": 0.022453951630198487,
+            "battery_ohmic_loss_kwh": 0.000663890578990924,
+            "soc_mean": 0.6337454088656523,
+            "soc_delta": 0.013309114058396299
+          },
+          "low_load": {
+            "steps": 1444,
+            "available": true,
+            "duration_s": 1444.0,
+            "hydrogen_g": 85.03333668163921,
+            "fc_energy_kwh": 1.3939261099331761,
+            "fc_energy_efficiency": 0.49183022949133703,
+            "fc_low_output_pct": 55.33240997229917,
+            "battery_throughput_kwh": 0.6455956065247891,
+            "battery_ohmic_loss_kwh": 0.012019030595299489,
+            "soc_mean": 0.6132401531298927,
+            "soc_delta": -0.12459486957450405
+          },
+          "acceleration": {
+            "steps": 1055,
+            "available": true,
+            "duration_s": 1055.0,
+            "hydrogen_g": 224.32344470408756,
+            "fc_energy_kwh": 3.8263903183473045,
+            "fc_energy_efficiency": 0.5117752628168079,
+            "fc_low_output_pct": 39.905213270142184,
+            "battery_throughput_kwh": 1.5657642426934657,
+            "battery_ohmic_loss_kwh": 0.08782127020191614,
+            "soc_mean": 0.601204243112973,
+            "soc_delta": -0.962422536504528
+          },
+          "regeneration": {
+            "steps": 677,
+            "available": true,
+            "duration_s": 677.0,
+            "hydrogen_g": 46.20217623173089,
+            "fc_energy_kwh": 0.6941485052086683,
+            "fc_energy_efficiency": 0.450769628373863,
+            "fc_low_output_pct": 78.13884785819793,
+            "battery_throughput_kwh": 1.6920039204829436,
+            "battery_ohmic_loss_kwh": 0.10177376475845587,
+            "soc_mean": 0.6117612918549937,
+            "soc_delta": 0.9893130521181129
+          },
+          "high_speed": {
+            "steps": 922,
+            "available": true,
+            "duration_s": 922.0,
+            "hydrogen_g": 288.4166449749638,
+            "fc_energy_kwh": 4.994829722730937,
+            "fc_energy_efficiency": 0.5195951075663604,
+            "fc_low_output_pct": 13.99132321041215,
+            "battery_throughput_kwh": 0.5101716309362413,
+            "battery_ohmic_loss_kwh": 0.010924125321984274,
+            "soc_mean": 0.5722962278730762,
+            "soc_delta": 0.013023151303743097
+          }
+        },
+        "missing_sensors": [],
+        "basis": "overlapping_input_regimes_diagnostic_only",
+        "thresholds": {
+          "stopped_m_s": 0.1,
+          "low_load_kw": 10.0,
+          "acceleration_m_s2": 0.1,
+          "high_speed_m_s": 22.2222222222
+        },
+        "note": "Groups overlap; raw H2 alone is not charge-sustaining fuel economy."
+      },
+      "missing_sensors": [],
+      "witness_steps": [
+        {
+          "step": 0,
+          "time_s": 0.0,
+          "soc": 0.6007367204674494,
+          "p_fc_kw": 5.75969398021698,
+          "ramp_kw_s": 5.75969398021698,
+          "p_batt_kw": -4.34200442641612
+        },
+        {
+          "step": 1320,
+          "time_s": 1320.0,
+          "soc": 0.5753339369469622,
+          "p_fc_kw": 19.353455841192044,
+          "ramp_kw_s": 9.841004610061646,
+          "p_batt_kw": 2.7692189282022266
+        },
+        {
+          "step": 1544,
+          "time_s": 1544.0,
+          "soc": 0.5773462508763646,
+          "p_fc_kw": 49.66527502343524,
+          "ramp_kw_s": -9.861129522323608,
+          "p_batt_kw": -6.615080906437652
+        },
+        {
+          "step": 1623,
+          "time_s": 1623.0,
+          "soc": 0.5721605013153702,
+          "p_fc_kw": 42.20786021382082,
+          "ramp_kw_s": -9.918290376663208,
+          "p_batt_kw": -8.047442942393682
+        },
+        {
+          "step": 1684,
+          "time_s": 1684.0,
+          "soc": 0.5730637990984392,
+          "p_fc_kw": 48.403564601321705,
+          "ramp_kw_s": 9.84537124633789,
+          "p_batt_kw": 5.9648168639740105
+        },
+        {
+          "step": 1727,
+          "time_s": 1727.0,
+          "soc": 0.5723188322852633,
+          "p_fc_kw": 13.53448570065666,
+          "ramp_kw_s": -9.863336086273193,
+          "p_batt_kw": -6.667043531432394
+        },
+        {
+          "step": 1885,
+          "time_s": 1885.0,
+          "soc": 0.6413181083241309,
+          "p_fc_kw": 0.04257619671989232,
+          "ramp_kw_s": 0.038523077964782715,
+          "p_batt_kw": -0.041967895008438574
+        },
+        {
+          "step": 2793,
+          "time_s": 2793.0,
+          "soc": 0.5633687875388056,
+          "p_fc_kw": 14.673710852512158,
+          "ramp_kw_s": 0.24323716759681702,
+          "p_batt_kw": 0.5998147834246611
+        },
+        {
+          "step": 3440,
+          "time_s": 3440.0,
+          "soc": 0.6348431033679202,
+          "p_fc_kw": 0.03381567483302206,
+          "ramp_kw_s": 0.0,
+          "p_batt_kw": 0.0
+        }
+      ],
+      "dominant_fc_degradation": "start_stop",
+      "count_definition": "start_stop counts starts; low/high_power count active steps; load_change counts threshold-exceeding steps"
+    },
+    "paper_fuel": {
+      "equivalent_g_per_km": 10.556665388962326,
+      "equivalent_fuel_g": 509.12959215260867,
+      "equivalent_mileage_km": 48.22825896186276,
+      "drive_mileage_km": 48.22825896186276,
+      "soc_i": 0.6007367204674494,
+      "soc_f": 0.6348431033679202,
+      "batt_eq_h2_g": -3.124417448713731,
+      "mileage_correction_km": 0.0,
+      "fc_efficiency": 0.5109235176735343,
+      "fuel_metric_basis": "deterministic_paper_energy_tail10_v2",
+      "fc_eff_mode": "energy",
+      "battery_capacity_kwh": 1.56,
+      "h2_lhv_kwh_per_kg": 33.33,
+      "electric_distance_km_per_kwh": 5.0,
+      "dt_s": 1.0
+    },
+    "trajectory_path": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/61e368bf76f11a40e702c34d/deterministic_rollouts/episode_00399.npz",
+    "checkpoint_path": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/61e368bf76f11a40e702c34d/models/iter_001/Standard_WLTC_WVUINTER/net_params/actor_iter001_ep399.pkl",
+    "fuel_metric_basis": "deterministic_paper_energy_tail10_v2"
+  },
+  "evaluation_evidence": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/61e368bf76f11a40e702c34d/deterministic_evaluations.jsonl",
+  "trajectory_dir": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/61e368bf76f11a40e702c34d/deterministic_rollouts",
+  "physical_evidence_path": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/61e368bf76f11a40e702c34d/physical_evidence.json",
+  "learning_rate_config": {
+    "lr_critic": 0.0003,
+    "lr_critic_min": 0.0001,
+    "lr_actor": 0.0001,
+    "lr_actor_min": 2e-05,
+    "lr_alpha": 0.0002,
+    "lr_alpha_min": 5e-05,
+    "lr_schedule_episodes": 400,
+    "lr_restart_cycles": 1,
+    "lr_warmup_ratio": 0.0,
+    "const_lr": false,
+    "auto_lr_on_reward_patch": false
+  },
+  "trained_episodes": 400,
+  "evaluated_checkpoints": 400,
+  "policy_quality": {
+    "status": "ok",
+    "score": 80.9,
+    "h2_score": 82.7,
+    "soc_score": 93.1,
+    "convergence_score": 52.6,
+    "convergence_degradation": 0.0711,
+    "convergence_basis": "deterministic",
+    "h2_level_score": 76.0,
+    "h2_level_basis": "tail10",
+    "h2_consistency_score": 98.4,
+    "h2_floor_g100km": 799.992,
+    "h2eq_corr_mean_g100km": 1053.903,
+    "h2eq_corr_tail_mean_g100km": 1052.4402182881688,
+    "equivalent_g_per_km_tail_mean": 10.524402182881689,
+    "fuel_metric_basis": "deterministic_paper_energy_tail10_v2",
+    "fuel_eval_count": 329,
+    "fuel_tail_eval_count": 40,
+    "fuel_tail_expected_count": 40,
+    "fuel_tail_episodes": [
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399
+    ],
+    "fce_eff_mean": 0.4902,
+    "fc_on_pct_mean": 79.6,
+    "soc_end_minus_target_mean": 0.0998,
+    "h2_mean_g100km": 1060.038,
+    "h2_best_p10": 1041.9,
+    "inbounds_rate_mean": 93.1,
+    "mean_fcs_cost": 1.8678,
+    "mean_batt_cost": 0.252,
+    "mean_soc_swing": 0.1557,
+    "battery_underutilized": false,
+    "best_episode_ratio": 0.9724,
+    "n_episodes": 400
+  }
+}

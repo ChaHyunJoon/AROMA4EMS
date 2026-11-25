@@ -1,0 +1,13 @@
+# Python 3.12. Versions used for the paper runs.
+numpy==2.4.1
+scipy==1.17.0
+torch==2.10.0
+pandas==3.0.0
+matplotlib==3.10.8
+tqdm==4.67.1
+tensorboard==2.20.0
+cosine_annealing_warmup @ git+https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup.git@12d03c07553aedd3d9e9155e2b3e31ce8c64081a
+# tests and notebooks
+pytest==9.1.1
+nbclient==0.11.0
+ipykernel==7.1.0

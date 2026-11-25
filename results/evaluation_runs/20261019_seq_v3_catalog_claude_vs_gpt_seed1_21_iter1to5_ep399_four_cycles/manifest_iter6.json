@@ -1,0 +1,1709 @@
+{
+  "checkpoint_episode": 399,
+  "cycles": [
+    "UDDS",
+    "WVUSUB",
+    "LA92",
+    "HWFET",
+    "WLTC_WVUINTER"
+  ],
+  "training_cycle": "WLTC_WVUINTER",
+  "jobs": {
+    "claude_seed1_iter006_ep399": {
+      "agent": "claude",
+      "seed": 1,
+      "iteration": 6,
+      "run": "results/aroma_runs/seed1_obscur_20261018_113049_381984490/search/20261018_113049_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmanthropic_claude-sonnet-4-6+claude-haiku-4-5-20251001_multiagent_seed1_obscur_seq_v3_catalog_iter6",
+      "runs": [
+        "results/aroma_runs/seed1_obscur_20261018_113049_381984490/search/20261018_113049_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmanthropic_claude-sonnet-4-6+claude-haiku-4-5-20251001_multiagent_seed1_obscur_seq_v3_catalog_iter6"
+      ],
+      "trial": "results/aroma_runs/seed1_obscur_20261018_113049_381984490/search/20261018_113049_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmanthropic_claude-sonnet-4-6+claude-haiku-4-5-20251001_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/5815d6969d0b14a08993a082",
+      "candidate_id": "0806a9a53e49f56b86ab6ed517c5f0df7b583284c6c703fee14c4b4d8e30c0eb",
+      "adoption_decision": "retain_champion",
+      "verdict": {
+        "status": "fail",
+        "checks": {
+          "total_cost_strictly_improved": false,
+          "charge_sustaining": true,
+          "fuel_within_guard": true,
+          "battery_within_guard": true
+        },
+        "checkpoint_episode": 399,
+        "cost_unit": "USD per 100 km",
+        "total_cost_delta_usd": 3.6881859428421926,
+        "cost_delta_usd": {
+          "h2_usd": -0.2514738013898885,
+          "fc_usd": 4.264284976577077,
+          "batt_usd": -0.32462523234499585
+        },
+        "soc_drift": -0.012263905591819224,
+        "fuel_delta_gkm": -0.35924828769983996,
+        "fc_loss_delta": 3.3825500022621746e-05,
+        "batt_loss_delta": -4.130027902049527e-05,
+        "guards": {
+          "reference": "baseline",
+          "max_fuel_increase_fraction": 0.05,
+          "max_batt_increase_fraction": 0.1,
+          "fuel_gkm_max": 11.18909967951321,
+          "batt_loss_max": 0.0005969470490372886,
+          "soc_drift_abs_max": 0.05
+        },
+        "guard_reference": "baseline",
+        "comparison_basis": "matched_fresh_training",
+        "total_cost_delta_usd_vs_baseline": -6.805946938562954,
+        "fuel_delta_gkm_vs_baseline": -0.28972481908006387,
+        "fc_loss_delta_vs_baseline": -4.529066665737158e-05,
+        "batt_loss_delta_vs_baseline": -0.00011367170949483363
+      },
+      "recorded_ep399": {
+        "fuel_gkm": 10.366560589980136,
+        "fc_loss": 0.00018226749998606628,
+        "batt_loss": 0.0004290074259936105,
+        "soc_in_bounds": 100.0,
+        "soc_min": 0.5518037970978535,
+        "soc_max": 0.659312987067249
+      },
+      "recorded_cost": {
+        "h2_usd": 7.256592412986095,
+        "fc_usd": 22.9779474476074,
+        "batt_usd": 3.372050713550714,
+        "degradation_usd": 26.349998161158112,
+        "total_usd": 33.60659057414421,
+        "unit": "USD per 100 km"
+      },
+      "recorded_fuel_breakdown": {
+        "raw_h2_gkm": 10.34353520413661,
+        "soc_correction_gkm": 0.023025385843524995,
+        "soc_final": 0.5877360944081808,
+        "soc_final_minus_initial": -0.012263905591819224,
+        "unaccepted_fc_kwh": 0.0007336333132496166,
+        "unaccepted_regen_kwh": 0.0
+      },
+      "actor_path": "results/aroma_runs/seed1_obscur_20261018_113049_381984490/search/20261018_113049_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmanthropic_claude-sonnet-4-6+claude-haiku-4-5-20251001_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/5815d6969d0b14a08993a082/models/iter_001/Standard_WLTC_WVUINTER/net_params/actor_iter001_ep399.pkl",
+      "actor_sha256": "9b0162a959340f32f507c4bc9ac3a7bf6db3176f29a9fbf4b9d560facac0193e",
+      "conditions": {
+        "scenario_name": "Standard_WLTC_WVUINTER",
+        "MODE": "CS",
+        "soc0": 0.6,
+        "soc_target": 0.6,
+        "training_initial_states": "fixed",
+        "w_soc": 500.0,
+        "failure_cost_per_step": 1000.0,
+        "unserved_cost_per_kw": 50.0,
+        "obs_norm": "fixed",
+        "obs_speed_scale": 40.0,
+        "obs_timing": "current",
+        "obs_acc_scale": 4.0,
+        "w_h2": 10.0,
+        "search_plan": "archive",
+        "development_cycles": [],
+        "development_max_regression": 0.0,
+        "critic_layernorm": true,
+        "actor_layernorm": false,
+        "ramp_limit_kw": 10.0,
+        "per": true,
+        "per_alpha": 0.6,
+        "per_beta0": 0.4,
+        "per_beta_steps": 0,
+        "per_eps": 1e-06,
+        "w_fc": 4275000.0,
+        "w_batt": 1116000.0,
+        "eq_h2_batt_coef": 0.0164,
+        "DRL": "SAC",
+        "policy": "Gaussian",
+        "max_episodes": 500,
+        "start_episode": 0,
+        "episode_steps": null,
+        "batch_size": 256,
+        "buffer_size": 500000,
+        "gamma": 0.995,
+        "tau": 0.005,
+        "alpha": 1.0,
+        "auto_tune": true,
+        "policy_delay": 1,
+        "lr_critic": 0.0003,
+        "lr_critic_min": 0.0001,
+        "lr_actor": 0.0001,
+        "lr_actor_min": 2e-05,
+        "lr_alpha": 0.0002,
+        "target_entropy_scale": 2.0,
+        "lr_alpha_min": 5e-05,
+        "const_lr": false,
+        "lr_schedule_episodes": 400,
+        "lr_restart_cycles": 1,
+        "lr_warmup_ratio": 0.0,
+        "auto_lr_on_reward_patch": false,
+        "lr_auto_scale_floor": 0.55,
+        "lr_auto_scale_ceiling": 1.1,
+        "lr_auto_warmup_min": 0.1,
+        "lr_auto_warmup_max": 0.2,
+        "lr_auto_warmup_gain": 0.1,
+        "cuda": true,
+        "random_seed": true,
+        "seed": 1,
+        "load_or_not": false,
+        "load_episode": 0,
+        "load_scenario_name": "",
+        "load_dir": "",
+        "refinement_protocol": "sequential",
+        "proposal_attempts": 10,
+        "cost_scale_max_ratio": 1.0,
+        "artifact_detail": "compact",
+        "scenario_validation": false,
+        "cycle_segment_validation": false,
+        "baseline_reward_file": "FCHEV-EMS/aroma/agentEMS_val_base.py",
+        "candidate_pool_size": 1,
+        "candidate_attempts": 10,
+        "pilot_episodes": 0,
+        "unreviewed_candidate_policy": "record",
+        "confirmation_seeds": 1,
+        "cost_max_fuel_increase": 0.05,
+        "cost_max_batt_increase": 0.1,
+        "reward_term_catalog": true,
+        "cost_max_soc_drift": 0.05,
+        "edit_base_max_stale": 2,
+        "validation_min_improvement_gkm": 0.0,
+        "validation_min_improvement_fraction": 0.0,
+        "validation_terminal_soc_error": 0.02,
+        "validation_scenario_soc_error": 0.02,
+        "validation_unaccepted_energy_kwh": 0.0,
+        "validation_unaccepted_peak_kw": 0.0,
+        "validation_unaccepted_peak_slack_kw": 0.5,
+        "validation_unaccepted_energy_slack_kwh": 0.001,
+        "validation_condition_soc_tolerance": 0.005,
+        "validation_condition_fuel_regression": 0.05,
+        "validation_max_degradation_ratio": 1.0,
+        "validation_min_in_bounds": 98.0,
+        "chunk_episodes": 400,
+        "feedback_process_episodes": 50,
+        "reset_agent_on_patch": true,
+        "reward_module": "aroma_matched_reward",
+        "reward_file": "results/aroma_runs/seed1_obscur_20261018_113049_381984490/aroma_matched_reward.py",
+        "multi_agent_review": true,
+        "debate_rounds": 1,
+        "parse_retries": 10,
+        "tpe_retries": 20,
+        "tpe_soc_in_bounds_floor": 98.0,
+        "tpe_fp_pool_size": 6,
+        "tpe_fp_topk": 2,
+        "tpe_fp_bottomk": 2,
+        "aligned_min_tac": 0.12,
+        "aligned_w_fcs_gt": 0.5,
+        "aligned_w_batt_gt": 0.5,
+        "aligned_tac_tail_fraction": 0.1,
+        "aligned_dominance_threshold": 0.95,
+        "aligned_soc_dominance_threshold": 0.85,
+        "aligned_min_h2_fraction": 0.25,
+        "aligned_h2_perturbation_ratio": 0.2,
+        "aligned_mt_envelope_quantile": 0.01,
+        "aligned_mt_seed": 0,
+        "aligned_mt_sobol": 2048,
+        "aligned_mt_top_k": 5,
+        "aligned_mt_de_maxiter": 60,
+        "aligned_mt_de_popsize": 15,
+        "aligned_mt_eps_up": 0.01,
+        "aligned_mt_min_sensitivity_h2": 0.5,
+        "aligned_mt_min_sensitivity_fcs": 0.25,
+        "aligned_mt_min_sensitivity_batt": 0.1,
+        "aligned_mt_min_sensitivity_soc": 0.2,
+        "aligned_mt_soc_oob_offset": 0.05,
+        "soc_low": 0.4,
+        "soc_high": 0.8
+      },
+      "training_source_audit": {
+        "FCHEV-EMS/common/fc_action.py": {
+          "training_sha256": "38549b9eef9372d4f0d4f2eaa09322b0e48e2d669c05ebd722352e4032c194cb",
+          "evaluation_sha256": "38549b9eef9372d4f0d4f2eaa09322b0e48e2d669c05ebd722352e4032c194cb",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/env.py": {
+          "training_sha256": "badf2c7d9868381c4186674c61826bc7099786d0f882e7289af5ebdae9962312",
+          "evaluation_sha256": "badf2c7d9868381c4186674c61826bc7099786d0f882e7289af5ebdae9962312",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/memory.py": {
+          "training_sha256": "f54194d88b5d40f7bbdf5e04754797c5d69aaaaea639aee15e59b2fa094f460f",
+          "evaluation_sha256": "f54194d88b5d40f7bbdf5e04754797c5d69aaaaea639aee15e59b2fa094f460f",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/network.py": {
+          "training_sha256": "f8acccd67105cd747e94eb6bbf6cf284246dd137ee759cf7103caa2ac745eec1",
+          "evaluation_sha256": "f8acccd67105cd747e94eb6bbf6cf284246dd137ee759cf7103caa2ac745eec1",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/utils.py": {
+          "training_sha256": "199e51bc198740f8280e18dc2fb737c0b0410b851012dd82a6308d593fd374d3",
+          "evaluation_sha256": "199e51bc198740f8280e18dc2fb737c0b0410b851012dd82a6308d593fd374d3",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/paper_fuel_economy.py": {
+          "training_sha256": "598ecf189aa160454f95de6cb70b0f33274edfea8bc4b754002f61e55936e822",
+          "evaluation_sha256": "598ecf189aa160454f95de6cb70b0f33274edfea8bc4b754002f61e55936e822",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/runner.py": {
+          "training_sha256": "c3df109d0390c5bfbc082a225d967c1b4d229db7811175b258d6266852fb07f2",
+          "evaluation_sha256": "c3df109d0390c5bfbc082a225d967c1b4d229db7811175b258d6266852fb07f2",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/evaluate.py": {
+          "training_sha256": "782e9c2639088703ec82f3adf5fb1e5bbfcd7e3e5bf2b21fe5b96830c1431efe",
+          "evaluation_sha256": "782e9c2639088703ec82f3adf5fb1e5bbfcd7e3e5bf2b21fe5b96830c1431efe",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/arguments.py": {
+          "training_sha256": "57c4ba6d0199d5814cc2eddc6ef0c15da90433b3e5f4e7cca6054ac1f734e798",
+          "evaluation_sha256": "57c4ba6d0199d5814cc2eddc6ef0c15da90433b3e5f4e7cca6054ac1f734e798",
+          "unchanged": true
+        },
+        "FCHEV-EMS/sac.py": {
+          "training_sha256": "956ae002d05714851e90cc361a009f0839369f1c894c95733a73679024030dd6",
+          "evaluation_sha256": "956ae002d05714851e90cc361a009f0839369f1c894c95733a73679024030dd6",
+          "unchanged": true
+        },
+        "FCHEV-EMS/FCHEV_SOH.py": {
+          "training_sha256": "961812a450ba70c4baebb977c73aec2c98b80e8703ff52731196180e5f7d820e",
+          "evaluation_sha256": "961812a450ba70c4baebb977c73aec2c98b80e8703ff52731196180e5f7d820e",
+          "unchanged": true
+        },
+        "FCHEV-EMS/Battery.py": {
+          "training_sha256": "83d522326ac15f1969d769110a565fa447e369fa3b1433c03456600b0272112d",
+          "evaluation_sha256": "83d522326ac15f1969d769110a565fa447e369fa3b1433c03456600b0272112d",
+          "unchanged": true
+        },
+        "FCHEV-EMS/power_constraints.py": {
+          "training_sha256": "cc5ba4e4b4ce5abca2ca712f7b465906303a2ef0742e8d1a854248acb6ec99a3",
+          "evaluation_sha256": "cc5ba4e4b4ce5abca2ca712f7b465906303a2ef0742e8d1a854248acb6ec99a3",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/runner_ldri.py": {
+          "training_sha256": "8b2ca68253bd9f4fe2ff0474a44fa337c8963c21093a4179dd7086d1c1bf4ec1",
+          "evaluation_sha256": "8b2ca68253bd9f4fe2ff0474a44fa337c8963c21093a4179dd7086d1c1bf4ec1",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/env_ldri.py": {
+          "training_sha256": "b175c4b4c3049fac4cf0c5600aede1752e8b3e689a82a3b2376205b77461c00b",
+          "evaluation_sha256": "b175c4b4c3049fac4cf0c5600aede1752e8b3e689a82a3b2376205b77461c00b",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/candidate_validation.py": {
+          "training_sha256": "a724f405dd02e365308c240f86d30813ee51685949b360093890353803af63d4",
+          "evaluation_sha256": "a724f405dd02e365308c240f86d30813ee51685949b360093890353803af63d4",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/validated_workflow.py": {
+          "training_sha256": "57af98daf186d53c37279240ff35065e52c141b205ca0c87cdda4c829efeab8f",
+          "evaluation_sha256": "57af98daf186d53c37279240ff35065e52c141b205ca0c87cdda4c829efeab8f",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/baseline_import.py": {
+          "training_sha256": "ece20359ce3fcda0d8669c89ce2e8140d6a294b712c4501dd8c3fbef9fb17aba",
+          "evaluation_sha256": "ece20359ce3fcda0d8669c89ce2e8140d6a294b712c4501dd8c3fbef9fb17aba",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/policy_evidence.py": {
+          "training_sha256": "8860167d21b9712dc31311f96b95d590ff1de7bc7a594a4a59775b8b9e2db071",
+          "evaluation_sha256": "8860167d21b9712dc31311f96b95d590ff1de7bc7a594a4a59775b8b9e2db071",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/scenario_validation.py": {
+          "training_sha256": "e0d1c11bed4fe8ead63cd8d92aef41084b4b23ac6e7e445caf0e90de461ed5b9",
+          "evaluation_sha256": "e0d1c11bed4fe8ead63cd8d92aef41084b4b23ac6e7e445caf0e90de461ed5b9",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/cycle_segments.py": {
+          "training_sha256": "d5cf54a70a852e547e0e2ccfc425bbf95d5c09c292d18a74778efeddc6d6998e",
+          "evaluation_sha256": "d5cf54a70a852e547e0e2ccfc425bbf95d5c09c292d18a74778efeddc6d6998e",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/power_behavior.py": {
+          "training_sha256": "ad5eab68b8f6a025f0f7eddc255ac414b9c01507788a519c1dc84a62b41cb359",
+          "evaluation_sha256": "ad5eab68b8f6a025f0f7eddc255ac414b9c01507788a519c1dc84a62b41cb359",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/adoption_validation.py": {
+          "training_sha256": "70e1f82dfbba10abe86e95d6a11d5efbcc2d1d224fe06fd473c1e0712130f2ba",
+          "evaluation_sha256": "70e1f82dfbba10abe86e95d6a11d5efbcc2d1d224fe06fd473c1e0712130f2ba",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/training_initial_states.py": {
+          "training_sha256": "2d51d3a1b60a238d6106ee50ace8ed798fe0368c9af23f9f069df31969375352",
+          "evaluation_sha256": "2d51d3a1b60a238d6106ee50ace8ed798fe0368c9af23f9f069df31969375352",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/env_physics_facts.py": {
+          "training_sha256": "369768807511d9516368f0599567dfc42842d228923c19edb1fde918ed9a0e5e",
+          "evaluation_sha256": "369768807511d9516368f0599567dfc42842d228923c19edb1fde918ed9a0e5e",
+          "unchanged": true
+        },
+        "project-data/standard_driving_cycles/mat-data/Standard_WLTC_WVUINTER.mat": {
+          "training_sha256": "c9f1b0062855e6c9af47d09771a35e7e03f1939d3b35e83e2feaa2e336d6da52",
+          "evaluation_sha256": "c9f1b0062855e6c9af47d09771a35e7e03f1939d3b35e83e2feaa2e336d6da52",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/P_fc_stack_nexo.mat": {
+          "training_sha256": "11d8c9516aa72223b4889564e0b08c830787c025ecd98425e16e5f33ea550c77",
+          "evaluation_sha256": "11d8c9516aa72223b4889564e0b08c830787c025ecd98425e16e5f33ea550c77",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/mot_trq_max_nexo.mat": {
+          "training_sha256": "4195295c4985bc4180aed5ed68f9f4bd97cc856514faec99de615bc04d1dcacd",
+          "evaluation_sha256": "4195295c4985bc4180aed5ed68f9f4bd97cc856514faec99de615bc04d1dcacd",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/dcdc_eff_nexo.mat": {
+          "training_sha256": "7acfccbb6e903750ddcee7bca96ebe6503c7cc42432f99fba64bd13af0077a3d",
+          "evaluation_sha256": "7acfccbb6e903750ddcee7bca96ebe6503c7cc42432f99fba64bd13af0077a3d",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/T_mot_nexo.mat": {
+          "training_sha256": "7c486140f1afec090f205d2a0966122bbca2b31d80cf8f5af4aed56b476660c3",
+          "evaluation_sha256": "7c486140f1afec090f205d2a0966122bbca2b31d80cf8f5af4aed56b476660c3",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/W_mot_nexo.mat": {
+          "training_sha256": "e5ff40fbcaea852661d4bedde9841ddb9089aabac93579832e093978e1108567",
+          "evaluation_sha256": "e5ff40fbcaea852661d4bedde9841ddb9089aabac93579832e093978e1108567",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/mot_eff_nexo.mat": {
+          "training_sha256": "86555c109a009574953b7219ebc0a8cf4562253b131555bcd4113b5bdc496940",
+          "evaluation_sha256": "86555c109a009574953b7219ebc0a8cf4562253b131555bcd4113b5bdc496940",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/Eff_fc_nexo.mat": {
+          "training_sha256": "3ee5516566f49946ad961b02bd1106edd94f1041324a38e55d9fb94ad1ea2e5a",
+          "evaluation_sha256": "3ee5516566f49946ad961b02bd1106edd94f1041324a38e55d9fb94ad1ea2e5a",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/mot_trq_min_nexo.mat": {
+          "training_sha256": "660f3ad14f66d6c47c73fbfdae187c1bafc2286bf13856fb2b5571bd30cc5e85",
+          "evaluation_sha256": "660f3ad14f66d6c47c73fbfdae187c1bafc2286bf13856fb2b5571bd30cc5e85",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/P_DCDC.mat": {
+          "training_sha256": "c3fd00d66cae553a32651a95a0fbb01d4e5e0834184075ae2c23144d7333ed06",
+          "evaluation_sha256": "c3fd00d66cae553a32651a95a0fbb01d4e5e0834184075ae2c23144d7333ed06",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/fce_eff.mat": {
+          "training_sha256": "5061c1857aa7b20d6213f1e2641c689e975403ec455a752314f0959553425ee5",
+          "evaluation_sha256": "5061c1857aa7b20d6213f1e2641c689e975403ec455a752314f0959553425ee5",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/P_fc_sys_nexo.mat": {
+          "training_sha256": "360341729bff29b3e0aba3aee8d4a34821e51bb5ed9a9145c9df61961bcca6f6",
+          "evaluation_sha256": "360341729bff29b3e0aba3aee8d4a34821e51bb5ed9a9145c9df61961bcca6f6",
+          "unchanged": true
+        },
+        "project-data/Battery_data/ocv_new.pkl": {
+          "training_sha256": "169dbfbfe372557c034a13532ca9595f5cea34218fa4cd8d57a706930af01855",
+          "evaluation_sha256": "169dbfbfe372557c034a13532ca9595f5cea34218fa4cd8d57a706930af01855",
+          "unchanged": true
+        },
+        "project-data/Battery_data/r_in.pkl": {
+          "training_sha256": "c83ac06d9ccb8b923069bdb84ec43fc760ee073ccfb68ff4d5ccb0971fcdb90c",
+          "evaluation_sha256": "c83ac06d9ccb8b923069bdb84ec43fc760ee073ccfb68ff4d5ccb0971fcdb90c",
+          "unchanged": true
+        },
+        "results/aroma_runs/seed1_obscur_20261018_113049_381984490/aroma_matched_reward.py": {
+          "training_sha256": "10320f1ec52dc051f5699256d893a4c028651c09bb2197e891f6bd5585522455",
+          "evaluation_sha256": "6f45d837b7787c2c7ea5f971cce6841ad2ca593a1832f7c3ee2bbd6044fc5efd",
+          "unchanged": false
+        },
+        "FCHEV-EMS/aroma/development_validation.py": {
+          "training_sha256": "25db2b70760c303b109e6b1d3d71369f15233fd326c781ef27170f740fdb5851",
+          "evaluation_sha256": "25db2b70760c303b109e6b1d3d71369f15233fd326c781ef27170f740fdb5851",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/operating_cost.py": {
+          "training_sha256": "2a8c344a74117687ee171ad5e28f8254ceac42dc114b78a18d12282a9e812306",
+          "evaluation_sha256": "2a8c344a74117687ee171ad5e28f8254ceac42dc114b78a18d12282a9e812306",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/reward_terms.py": {
+          "training_sha256": "2112baf7033412c92d114942f27f7471ab40e4c8a9c5458bf613a759becdd3f3",
+          "evaluation_sha256": "2112baf7033412c92d114942f27f7471ab40e4c8a9c5458bf613a759becdd3f3",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/sequential_workflow.py": {
+          "training_sha256": "d4d99255637272b2ca9180faa5a03a22c91d08d7b031eb14e48c5d824d3ced2a",
+          "evaluation_sha256": "d4d99255637272b2ca9180faa5a03a22c91d08d7b031eb14e48c5d824d3ced2a",
+          "unchanged": true
+        }
+      }
+    },
+    "claude_seed21_iter006_ep399": {
+      "agent": "claude",
+      "seed": 21,
+      "iteration": 6,
+      "run": "results/aroma_runs/seed21_obscur_20261018_111258_732353594/search/20261018_111258_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmanthropic_claude-sonnet-4-6+claude-haiku-4-5-20251001_multiagent_seed21_obscur_seq_v3_catalog_iter6",
+      "runs": [
+        "results/aroma_runs/seed21_obscur_20261018_111258_732353594/search/20261018_111258_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmanthropic_claude-sonnet-4-6+claude-haiku-4-5-20251001_multiagent_seed21_obscur_seq_v3_catalog_iter6"
+      ],
+      "trial": "results/aroma_runs/seed21_obscur_20261018_111258_732353594/search/20261018_111258_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmanthropic_claude-sonnet-4-6+claude-haiku-4-5-20251001_multiagent_seed21_obscur_seq_v3_catalog_iter6/trials/60def8046d699a7c56e636d1",
+      "candidate_id": "5ecd259f05db27b25ce8b022c1ec09172d5f46fd34d255063c3f1755e04fed92",
+      "adoption_decision": "retain_champion",
+      "verdict": {
+        "status": "fail",
+        "checks": {
+          "total_cost_strictly_improved": false,
+          "charge_sustaining": true,
+          "fuel_within_guard": true,
+          "battery_within_guard": true
+        },
+        "checkpoint_episode": 399,
+        "cost_unit": "USD per 100 km",
+        "total_cost_delta_usd": 15.312480791565122,
+        "cost_delta_usd": {
+          "h2_usd": -0.4836386588434678,
+          "fc_usd": 15.867128871204265,
+          "batt_usd": -0.07100942079567218
+        },
+        "soc_drift": 0.013757164413285117,
+        "fuel_delta_gkm": -0.690912369776381,
+        "fc_loss_delta": 0.00012586250002988297,
+        "batt_loss_delta": -9.034137213426163e-06,
+        "guards": {
+          "reference": "baseline",
+          "max_fuel_increase_fraction": 0.05,
+          "max_batt_increase_fraction": 0.1,
+          "fuel_gkm_max": 12.139458655511469,
+          "batt_loss_max": 0.0005920614661019674,
+          "soc_drift_abs_max": 0.05
+        },
+        "guard_reference": "same_as_cost_reference",
+        "comparison_basis": "matched_fresh_training"
+      },
+      "recorded_ep399": {
+        "fuel_gkm": 10.870476825948826,
+        "fc_loss": 0.00029899249995957167,
+        "batt_loss": 0.0005292035592429079,
+        "soc_in_bounds": 100.0,
+        "soc_min": 0.5310367494665853,
+        "soc_max": 0.6443813425037933
+      },
+      "recorded_cost": {
+        "h2_usd": 7.609333778164178,
+        "fc_usd": 37.69313756882055,
+        "batt_usd": 4.159604546298,
+        "degradation_usd": 41.85274211511855,
+        "total_usd": 49.46207589328273,
+        "unit": "USD per 100 km"
+      },
+      "recorded_fuel_breakdown": {
+        "raw_h2_gkm": 10.897110248433904,
+        "soc_correction_gkm": -0.026633422485078287,
+        "soc_final": 0.6137571644132851,
+        "soc_final_minus_initial": 0.013757164413285117,
+        "unaccepted_fc_kwh": 0.0,
+        "unaccepted_regen_kwh": 0.0
+      },
+      "actor_path": "results/aroma_runs/seed21_obscur_20261018_111258_732353594/search/20261018_111258_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmanthropic_claude-sonnet-4-6+claude-haiku-4-5-20251001_multiagent_seed21_obscur_seq_v3_catalog_iter6/trials/60def8046d699a7c56e636d1/models/iter_001/Standard_WLTC_WVUINTER/net_params/actor_iter001_ep399.pkl",
+      "actor_sha256": "edf8ae4ea295e24940cc3611effd301c4c9170c4c9578d7c07dc547ca7f1f721",
+      "conditions": {
+        "scenario_name": "Standard_WLTC_WVUINTER",
+        "MODE": "CS",
+        "soc0": 0.6,
+        "soc_target": 0.6,
+        "training_initial_states": "fixed",
+        "w_soc": 500.0,
+        "failure_cost_per_step": 1000.0,
+        "unserved_cost_per_kw": 50.0,
+        "obs_norm": "fixed",
+        "obs_speed_scale": 40.0,
+        "obs_timing": "current",
+        "obs_acc_scale": 4.0,
+        "w_h2": 10.0,
+        "search_plan": "archive",
+        "development_cycles": [],
+        "development_max_regression": 0.0,
+        "critic_layernorm": true,
+        "actor_layernorm": false,
+        "ramp_limit_kw": 10.0,
+        "per": true,
+        "per_alpha": 0.6,
+        "per_beta0": 0.4,
+        "per_beta_steps": 0,
+        "per_eps": 1e-06,
+        "w_fc": 4275000.0,
+        "w_batt": 1116000.0,
+        "eq_h2_batt_coef": 0.0164,
+        "DRL": "SAC",
+        "policy": "Gaussian",
+        "max_episodes": 500,
+        "start_episode": 0,
+        "episode_steps": null,
+        "batch_size": 256,
+        "buffer_size": 500000,
+        "gamma": 0.995,
+        "tau": 0.005,
+        "alpha": 1.0,
+        "auto_tune": true,
+        "policy_delay": 1,
+        "lr_critic": 0.0003,
+        "lr_critic_min": 0.0001,
+        "lr_actor": 0.0001,
+        "lr_actor_min": 2e-05,
+        "lr_alpha": 0.0002,
+        "target_entropy_scale": 2.0,
+        "lr_alpha_min": 5e-05,
+        "const_lr": false,
+        "lr_schedule_episodes": 400,
+        "lr_restart_cycles": 1,
+        "lr_warmup_ratio": 0.0,
+        "auto_lr_on_reward_patch": false,
+        "lr_auto_scale_floor": 0.55,
+        "lr_auto_scale_ceiling": 1.1,
+        "lr_auto_warmup_min": 0.1,
+        "lr_auto_warmup_max": 0.2,
+        "lr_auto_warmup_gain": 0.1,
+        "cuda": true,
+        "random_seed": true,
+        "seed": 21,
+        "load_or_not": false,
+        "load_episode": 0,
+        "load_scenario_name": "",
+        "load_dir": "",
+        "refinement_protocol": "sequential",
+        "proposal_attempts": 10,
+        "cost_scale_max_ratio": 1.0,
+        "artifact_detail": "compact",
+        "scenario_validation": false,
+        "cycle_segment_validation": false,
+        "baseline_reward_file": "FCHEV-EMS/aroma/agentEMS_val_base.py",
+        "candidate_pool_size": 1,
+        "candidate_attempts": 10,
+        "pilot_episodes": 0,
+        "unreviewed_candidate_policy": "record",
+        "confirmation_seeds": 1,
+        "cost_max_fuel_increase": 0.05,
+        "cost_max_batt_increase": 0.1,
+        "reward_term_catalog": true,
+        "cost_max_soc_drift": 0.05,
+        "edit_base_max_stale": 2,
+        "validation_min_improvement_gkm": 0.0,
+        "validation_min_improvement_fraction": 0.0,
+        "validation_terminal_soc_error": 0.02,
+        "validation_scenario_soc_error": 0.02,
+        "validation_unaccepted_energy_kwh": 0.0,
+        "validation_unaccepted_peak_kw": 0.0,
+        "validation_unaccepted_peak_slack_kw": 0.5,
+        "validation_unaccepted_energy_slack_kwh": 0.001,
+        "validation_condition_soc_tolerance": 0.005,
+        "validation_condition_fuel_regression": 0.05,
+        "validation_max_degradation_ratio": 1.0,
+        "validation_min_in_bounds": 98.0,
+        "chunk_episodes": 400,
+        "feedback_process_episodes": 50,
+        "reset_agent_on_patch": true,
+        "reward_module": "aroma_matched_reward",
+        "reward_file": "results/aroma_runs/seed21_obscur_20261018_111258_732353594/aroma_matched_reward.py",
+        "multi_agent_review": true,
+        "debate_rounds": 1,
+        "parse_retries": 10,
+        "tpe_retries": 20,
+        "tpe_soc_in_bounds_floor": 98.0,
+        "tpe_fp_pool_size": 6,
+        "tpe_fp_topk": 2,
+        "tpe_fp_bottomk": 2,
+        "aligned_min_tac": 0.12,
+        "aligned_w_fcs_gt": 0.5,
+        "aligned_w_batt_gt": 0.5,
+        "aligned_tac_tail_fraction": 0.1,
+        "aligned_dominance_threshold": 0.95,
+        "aligned_soc_dominance_threshold": 0.85,
+        "aligned_min_h2_fraction": 0.25,
+        "aligned_h2_perturbation_ratio": 0.2,
+        "aligned_mt_envelope_quantile": 0.01,
+        "aligned_mt_seed": 0,
+        "aligned_mt_sobol": 2048,
+        "aligned_mt_top_k": 5,
+        "aligned_mt_de_maxiter": 60,
+        "aligned_mt_de_popsize": 15,
+        "aligned_mt_eps_up": 0.01,
+        "aligned_mt_min_sensitivity_h2": 0.5,
+        "aligned_mt_min_sensitivity_fcs": 0.25,
+        "aligned_mt_min_sensitivity_batt": 0.1,
+        "aligned_mt_min_sensitivity_soc": 0.2,
+        "aligned_mt_soc_oob_offset": 0.05,
+        "soc_low": 0.4,
+        "soc_high": 0.8
+      },
+      "training_source_audit": {
+        "FCHEV-EMS/common/fc_action.py": {
+          "training_sha256": "38549b9eef9372d4f0d4f2eaa09322b0e48e2d669c05ebd722352e4032c194cb",
+          "evaluation_sha256": "38549b9eef9372d4f0d4f2eaa09322b0e48e2d669c05ebd722352e4032c194cb",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/env.py": {
+          "training_sha256": "badf2c7d9868381c4186674c61826bc7099786d0f882e7289af5ebdae9962312",
+          "evaluation_sha256": "badf2c7d9868381c4186674c61826bc7099786d0f882e7289af5ebdae9962312",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/memory.py": {
+          "training_sha256": "f54194d88b5d40f7bbdf5e04754797c5d69aaaaea639aee15e59b2fa094f460f",
+          "evaluation_sha256": "f54194d88b5d40f7bbdf5e04754797c5d69aaaaea639aee15e59b2fa094f460f",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/network.py": {
+          "training_sha256": "f8acccd67105cd747e94eb6bbf6cf284246dd137ee759cf7103caa2ac745eec1",
+          "evaluation_sha256": "f8acccd67105cd747e94eb6bbf6cf284246dd137ee759cf7103caa2ac745eec1",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/utils.py": {
+          "training_sha256": "199e51bc198740f8280e18dc2fb737c0b0410b851012dd82a6308d593fd374d3",
+          "evaluation_sha256": "199e51bc198740f8280e18dc2fb737c0b0410b851012dd82a6308d593fd374d3",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/paper_fuel_economy.py": {
+          "training_sha256": "598ecf189aa160454f95de6cb70b0f33274edfea8bc4b754002f61e55936e822",
+          "evaluation_sha256": "598ecf189aa160454f95de6cb70b0f33274edfea8bc4b754002f61e55936e822",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/runner.py": {
+          "training_sha256": "c3df109d0390c5bfbc082a225d967c1b4d229db7811175b258d6266852fb07f2",
+          "evaluation_sha256": "c3df109d0390c5bfbc082a225d967c1b4d229db7811175b258d6266852fb07f2",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/evaluate.py": {
+          "training_sha256": "782e9c2639088703ec82f3adf5fb1e5bbfcd7e3e5bf2b21fe5b96830c1431efe",
+          "evaluation_sha256": "782e9c2639088703ec82f3adf5fb1e5bbfcd7e3e5bf2b21fe5b96830c1431efe",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/arguments.py": {
+          "training_sha256": "57c4ba6d0199d5814cc2eddc6ef0c15da90433b3e5f4e7cca6054ac1f734e798",
+          "evaluation_sha256": "57c4ba6d0199d5814cc2eddc6ef0c15da90433b3e5f4e7cca6054ac1f734e798",
+          "unchanged": true
+        },
+        "FCHEV-EMS/sac.py": {
+          "training_sha256": "956ae002d05714851e90cc361a009f0839369f1c894c95733a73679024030dd6",
+          "evaluation_sha256": "956ae002d05714851e90cc361a009f0839369f1c894c95733a73679024030dd6",
+          "unchanged": true
+        },
+        "FCHEV-EMS/FCHEV_SOH.py": {
+          "training_sha256": "961812a450ba70c4baebb977c73aec2c98b80e8703ff52731196180e5f7d820e",
+          "evaluation_sha256": "961812a450ba70c4baebb977c73aec2c98b80e8703ff52731196180e5f7d820e",
+          "unchanged": true
+        },
+        "FCHEV-EMS/Battery.py": {
+          "training_sha256": "83d522326ac15f1969d769110a565fa447e369fa3b1433c03456600b0272112d",
+          "evaluation_sha256": "83d522326ac15f1969d769110a565fa447e369fa3b1433c03456600b0272112d",
+          "unchanged": true
+        },
+        "FCHEV-EMS/power_constraints.py": {
+          "training_sha256": "cc5ba4e4b4ce5abca2ca712f7b465906303a2ef0742e8d1a854248acb6ec99a3",
+          "evaluation_sha256": "cc5ba4e4b4ce5abca2ca712f7b465906303a2ef0742e8d1a854248acb6ec99a3",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/runner_ldri.py": {
+          "training_sha256": "8b2ca68253bd9f4fe2ff0474a44fa337c8963c21093a4179dd7086d1c1bf4ec1",
+          "evaluation_sha256": "8b2ca68253bd9f4fe2ff0474a44fa337c8963c21093a4179dd7086d1c1bf4ec1",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/env_ldri.py": {
+          "training_sha256": "b175c4b4c3049fac4cf0c5600aede1752e8b3e689a82a3b2376205b77461c00b",
+          "evaluation_sha256": "b175c4b4c3049fac4cf0c5600aede1752e8b3e689a82a3b2376205b77461c00b",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/candidate_validation.py": {
+          "training_sha256": "a724f405dd02e365308c240f86d30813ee51685949b360093890353803af63d4",
+          "evaluation_sha256": "a724f405dd02e365308c240f86d30813ee51685949b360093890353803af63d4",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/validated_workflow.py": {
+          "training_sha256": "57af98daf186d53c37279240ff35065e52c141b205ca0c87cdda4c829efeab8f",
+          "evaluation_sha256": "57af98daf186d53c37279240ff35065e52c141b205ca0c87cdda4c829efeab8f",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/baseline_import.py": {
+          "training_sha256": "ece20359ce3fcda0d8669c89ce2e8140d6a294b712c4501dd8c3fbef9fb17aba",
+          "evaluation_sha256": "ece20359ce3fcda0d8669c89ce2e8140d6a294b712c4501dd8c3fbef9fb17aba",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/policy_evidence.py": {
+          "training_sha256": "8860167d21b9712dc31311f96b95d590ff1de7bc7a594a4a59775b8b9e2db071",
+          "evaluation_sha256": "8860167d21b9712dc31311f96b95d590ff1de7bc7a594a4a59775b8b9e2db071",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/scenario_validation.py": {
+          "training_sha256": "e0d1c11bed4fe8ead63cd8d92aef41084b4b23ac6e7e445caf0e90de461ed5b9",
+          "evaluation_sha256": "e0d1c11bed4fe8ead63cd8d92aef41084b4b23ac6e7e445caf0e90de461ed5b9",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/cycle_segments.py": {
+          "training_sha256": "d5cf54a70a852e547e0e2ccfc425bbf95d5c09c292d18a74778efeddc6d6998e",
+          "evaluation_sha256": "d5cf54a70a852e547e0e2ccfc425bbf95d5c09c292d18a74778efeddc6d6998e",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/power_behavior.py": {
+          "training_sha256": "ad5eab68b8f6a025f0f7eddc255ac414b9c01507788a519c1dc84a62b41cb359",
+          "evaluation_sha256": "ad5eab68b8f6a025f0f7eddc255ac414b9c01507788a519c1dc84a62b41cb359",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/adoption_validation.py": {
+          "training_sha256": "70e1f82dfbba10abe86e95d6a11d5efbcc2d1d224fe06fd473c1e0712130f2ba",
+          "evaluation_sha256": "70e1f82dfbba10abe86e95d6a11d5efbcc2d1d224fe06fd473c1e0712130f2ba",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/training_initial_states.py": {
+          "training_sha256": "2d51d3a1b60a238d6106ee50ace8ed798fe0368c9af23f9f069df31969375352",
+          "evaluation_sha256": "2d51d3a1b60a238d6106ee50ace8ed798fe0368c9af23f9f069df31969375352",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/env_physics_facts.py": {
+          "training_sha256": "369768807511d9516368f0599567dfc42842d228923c19edb1fde918ed9a0e5e",
+          "evaluation_sha256": "369768807511d9516368f0599567dfc42842d228923c19edb1fde918ed9a0e5e",
+          "unchanged": true
+        },
+        "project-data/standard_driving_cycles/mat-data/Standard_WLTC_WVUINTER.mat": {
+          "training_sha256": "c9f1b0062855e6c9af47d09771a35e7e03f1939d3b35e83e2feaa2e336d6da52",
+          "evaluation_sha256": "c9f1b0062855e6c9af47d09771a35e7e03f1939d3b35e83e2feaa2e336d6da52",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/P_fc_stack_nexo.mat": {
+          "training_sha256": "11d8c9516aa72223b4889564e0b08c830787c025ecd98425e16e5f33ea550c77",
+          "evaluation_sha256": "11d8c9516aa72223b4889564e0b08c830787c025ecd98425e16e5f33ea550c77",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/mot_trq_max_nexo.mat": {
+          "training_sha256": "4195295c4985bc4180aed5ed68f9f4bd97cc856514faec99de615bc04d1dcacd",
+          "evaluation_sha256": "4195295c4985bc4180aed5ed68f9f4bd97cc856514faec99de615bc04d1dcacd",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/dcdc_eff_nexo.mat": {
+          "training_sha256": "7acfccbb6e903750ddcee7bca96ebe6503c7cc42432f99fba64bd13af0077a3d",
+          "evaluation_sha256": "7acfccbb6e903750ddcee7bca96ebe6503c7cc42432f99fba64bd13af0077a3d",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/T_mot_nexo.mat": {
+          "training_sha256": "7c486140f1afec090f205d2a0966122bbca2b31d80cf8f5af4aed56b476660c3",
+          "evaluation_sha256": "7c486140f1afec090f205d2a0966122bbca2b31d80cf8f5af4aed56b476660c3",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/W_mot_nexo.mat": {
+          "training_sha256": "e5ff40fbcaea852661d4bedde9841ddb9089aabac93579832e093978e1108567",
+          "evaluation_sha256": "e5ff40fbcaea852661d4bedde9841ddb9089aabac93579832e093978e1108567",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/mot_eff_nexo.mat": {
+          "training_sha256": "86555c109a009574953b7219ebc0a8cf4562253b131555bcd4113b5bdc496940",
+          "evaluation_sha256": "86555c109a009574953b7219ebc0a8cf4562253b131555bcd4113b5bdc496940",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/Eff_fc_nexo.mat": {
+          "training_sha256": "3ee5516566f49946ad961b02bd1106edd94f1041324a38e55d9fb94ad1ea2e5a",
+          "evaluation_sha256": "3ee5516566f49946ad961b02bd1106edd94f1041324a38e55d9fb94ad1ea2e5a",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/mot_trq_min_nexo.mat": {
+          "training_sha256": "660f3ad14f66d6c47c73fbfdae187c1bafc2286bf13856fb2b5571bd30cc5e85",
+          "evaluation_sha256": "660f3ad14f66d6c47c73fbfdae187c1bafc2286bf13856fb2b5571bd30cc5e85",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/P_DCDC.mat": {
+          "training_sha256": "c3fd00d66cae553a32651a95a0fbb01d4e5e0834184075ae2c23144d7333ed06",
+          "evaluation_sha256": "c3fd00d66cae553a32651a95a0fbb01d4e5e0834184075ae2c23144d7333ed06",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/fce_eff.mat": {
+          "training_sha256": "5061c1857aa7b20d6213f1e2641c689e975403ec455a752314f0959553425ee5",
+          "evaluation_sha256": "5061c1857aa7b20d6213f1e2641c689e975403ec455a752314f0959553425ee5",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/P_fc_sys_nexo.mat": {
+          "training_sha256": "360341729bff29b3e0aba3aee8d4a34821e51bb5ed9a9145c9df61961bcca6f6",
+          "evaluation_sha256": "360341729bff29b3e0aba3aee8d4a34821e51bb5ed9a9145c9df61961bcca6f6",
+          "unchanged": true
+        },
+        "project-data/Battery_data/ocv_new.pkl": {
+          "training_sha256": "169dbfbfe372557c034a13532ca9595f5cea34218fa4cd8d57a706930af01855",
+          "evaluation_sha256": "169dbfbfe372557c034a13532ca9595f5cea34218fa4cd8d57a706930af01855",
+          "unchanged": true
+        },
+        "project-data/Battery_data/r_in.pkl": {
+          "training_sha256": "c83ac06d9ccb8b923069bdb84ec43fc760ee073ccfb68ff4d5ccb0971fcdb90c",
+          "evaluation_sha256": "c83ac06d9ccb8b923069bdb84ec43fc760ee073ccfb68ff4d5ccb0971fcdb90c",
+          "unchanged": true
+        },
+        "results/aroma_runs/seed21_obscur_20261018_111258_732353594/aroma_matched_reward.py": {
+          "training_sha256": "10320f1ec52dc051f5699256d893a4c028651c09bb2197e891f6bd5585522455",
+          "evaluation_sha256": "7efb9f2f1f946e7df9bda058ad94275a15278fd724ad34af472c3832629e1eaf",
+          "unchanged": false
+        },
+        "FCHEV-EMS/aroma/development_validation.py": {
+          "training_sha256": "25db2b70760c303b109e6b1d3d71369f15233fd326c781ef27170f740fdb5851",
+          "evaluation_sha256": "25db2b70760c303b109e6b1d3d71369f15233fd326c781ef27170f740fdb5851",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/operating_cost.py": {
+          "training_sha256": "2a8c344a74117687ee171ad5e28f8254ceac42dc114b78a18d12282a9e812306",
+          "evaluation_sha256": "2a8c344a74117687ee171ad5e28f8254ceac42dc114b78a18d12282a9e812306",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/reward_terms.py": {
+          "training_sha256": "2112baf7033412c92d114942f27f7471ab40e4c8a9c5458bf613a759becdd3f3",
+          "evaluation_sha256": "2112baf7033412c92d114942f27f7471ab40e4c8a9c5458bf613a759becdd3f3",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/sequential_workflow.py": {
+          "training_sha256": "d4d99255637272b2ca9180faa5a03a22c91d08d7b031eb14e48c5d824d3ced2a",
+          "evaluation_sha256": "d4d99255637272b2ca9180faa5a03a22c91d08d7b031eb14e48c5d824d3ced2a",
+          "unchanged": true
+        }
+      }
+    },
+    "gpt_seed1_iter006_ep399": {
+      "agent": "gpt",
+      "seed": 1,
+      "iteration": 6,
+      "run": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6",
+      "runs": [
+        "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6"
+      ],
+      "trial": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/25d731f24baf083038d76165",
+      "candidate_id": "c1cb0fb6fc6313d594c06d75fd28148cd59afeee0e5a85068f05010b7067a4ba",
+      "adoption_decision": "retain_champion",
+      "verdict": {
+        "status": "fail",
+        "checks": {
+          "total_cost_strictly_improved": false,
+          "charge_sustaining": true,
+          "fuel_within_guard": true,
+          "battery_within_guard": true
+        },
+        "checkpoint_episode": 399,
+        "cost_unit": "USD per 100 km",
+        "total_cost_delta_usd": 16.810656973679905,
+        "cost_delta_usd": {
+          "h2_usd": 0.12530935262593346,
+          "fc_usd": 16.909704341695083,
+          "batt_usd": -0.22435672064111456
+        },
+        "soc_drift": 0.036972308990000036,
+        "fuel_delta_gkm": 0.17901336089419218,
+        "fc_loss_delta": 0.00013413249999338905,
+        "batt_loss_delta": -2.8543668943004086e-05,
+        "guards": {
+          "reference": "baseline",
+          "max_fuel_increase_fraction": 0.05,
+          "max_batt_increase_fraction": 0.1,
+          "fuel_gkm_max": 11.18909967951321,
+          "batt_loss_max": 0.0005969470490372886,
+          "soc_drift_abs_max": 0.05
+        },
+        "guard_reference": "baseline",
+        "comparison_basis": "matched_fresh_training",
+        "total_cost_delta_usd_vs_baseline": 5.36777378507027,
+        "fuel_delta_gkm_vs_baseline": 0.1156855156400578,
+        "fc_loss_delta_vs_baseline": 4.851933332050695e-05,
+        "batt_loss_delta_vs_baseline": -0.00010558372939251104
+      },
+      "recorded_ep399": {
+        "fuel_gkm": 10.771970924700257,
+        "fc_loss": 0.0002760774999639448,
+        "batt_loss": 0.0004370954060959331,
+        "soc_in_bounds": 100.0,
+        "soc_min": 0.5505518427863599,
+        "soc_max": 0.6406775932365727
+      },
+      "recorded_cost": {
+        "h2_usd": 7.540379647290179,
+        "fc_usd": 34.804308426479274,
+        "batt_usd": 3.4356232240079727,
+        "degradation_usd": 38.23993165048725,
+        "total_usd": 45.78031129777743,
+        "unit": "USD per 100 km"
+      },
+      "recorded_fuel_breakdown": {
+        "raw_h2_gkm": 10.843180895962197,
+        "soc_correction_gkm": -0.0712099712619406,
+        "soc_final": 0.63697230899,
+        "soc_final_minus_initial": 0.036972308990000036,
+        "unaccepted_fc_kwh": 0.00101039305482863,
+        "unaccepted_regen_kwh": 0.0
+      },
+      "actor_path": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/search/20261018_061824_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed1_obscur_seq_v3_catalog_iter6/trials/25d731f24baf083038d76165/models/iter_001/Standard_WLTC_WVUINTER/net_params/actor_iter001_ep399.pkl",
+      "actor_sha256": "f4bfb12490fd0e12f166a498e52cc43be2e16163536f15c8e770a8eb36b87920",
+      "conditions": {
+        "scenario_name": "Standard_WLTC_WVUINTER",
+        "MODE": "CS",
+        "soc0": 0.6,
+        "soc_target": 0.6,
+        "training_initial_states": "fixed",
+        "w_soc": 500.0,
+        "failure_cost_per_step": 1000.0,
+        "unserved_cost_per_kw": 50.0,
+        "obs_norm": "fixed",
+        "obs_speed_scale": 40.0,
+        "obs_timing": "current",
+        "obs_acc_scale": 4.0,
+        "w_h2": 10.0,
+        "search_plan": "archive",
+        "development_cycles": [],
+        "development_max_regression": 0.0,
+        "critic_layernorm": true,
+        "actor_layernorm": false,
+        "ramp_limit_kw": 10.0,
+        "per": true,
+        "per_alpha": 0.6,
+        "per_beta0": 0.4,
+        "per_beta_steps": 0,
+        "per_eps": 1e-06,
+        "w_fc": 4275000.0,
+        "w_batt": 1116000.0,
+        "eq_h2_batt_coef": 0.0164,
+        "DRL": "SAC",
+        "policy": "Gaussian",
+        "max_episodes": 500,
+        "start_episode": 0,
+        "episode_steps": null,
+        "batch_size": 256,
+        "buffer_size": 500000,
+        "gamma": 0.995,
+        "tau": 0.005,
+        "alpha": 1.0,
+        "auto_tune": true,
+        "policy_delay": 1,
+        "lr_critic": 0.0003,
+        "lr_critic_min": 0.0001,
+        "lr_actor": 0.0001,
+        "lr_actor_min": 2e-05,
+        "lr_alpha": 0.0002,
+        "target_entropy_scale": 2.0,
+        "lr_alpha_min": 5e-05,
+        "const_lr": false,
+        "lr_schedule_episodes": 400,
+        "lr_restart_cycles": 1,
+        "lr_warmup_ratio": 0.0,
+        "auto_lr_on_reward_patch": false,
+        "lr_auto_scale_floor": 0.55,
+        "lr_auto_scale_ceiling": 1.1,
+        "lr_auto_warmup_min": 0.1,
+        "lr_auto_warmup_max": 0.2,
+        "lr_auto_warmup_gain": 0.1,
+        "cuda": true,
+        "random_seed": true,
+        "seed": 1,
+        "load_or_not": false,
+        "load_episode": 0,
+        "load_scenario_name": "",
+        "load_dir": "",
+        "refinement_protocol": "sequential",
+        "proposal_attempts": 10,
+        "cost_scale_max_ratio": 1.0,
+        "artifact_detail": "compact",
+        "scenario_validation": false,
+        "cycle_segment_validation": false,
+        "baseline_reward_file": "FCHEV-EMS/aroma/agentEMS_val_base.py",
+        "candidate_pool_size": 1,
+        "candidate_attempts": 10,
+        "pilot_episodes": 0,
+        "unreviewed_candidate_policy": "record",
+        "confirmation_seeds": 1,
+        "cost_max_fuel_increase": 0.05,
+        "cost_max_batt_increase": 0.1,
+        "reward_term_catalog": true,
+        "cost_max_soc_drift": 0.05,
+        "edit_base_max_stale": 2,
+        "validation_min_improvement_gkm": 0.0,
+        "validation_min_improvement_fraction": 0.0,
+        "validation_terminal_soc_error": 0.02,
+        "validation_scenario_soc_error": 0.02,
+        "validation_unaccepted_energy_kwh": 0.0,
+        "validation_unaccepted_peak_kw": 0.0,
+        "validation_unaccepted_peak_slack_kw": 0.5,
+        "validation_unaccepted_energy_slack_kwh": 0.001,
+        "validation_condition_soc_tolerance": 0.005,
+        "validation_condition_fuel_regression": 0.05,
+        "validation_max_degradation_ratio": 1.0,
+        "validation_min_in_bounds": 98.0,
+        "chunk_episodes": 400,
+        "feedback_process_episodes": 50,
+        "reset_agent_on_patch": true,
+        "reward_module": "aroma_matched_reward",
+        "reward_file": "results/aroma_runs/seed1_obscur_20261018_061824_704722118/aroma_matched_reward.py",
+        "multi_agent_review": true,
+        "debate_rounds": 1,
+        "parse_retries": 10,
+        "tpe_retries": 20,
+        "tpe_soc_in_bounds_floor": 98.0,
+        "tpe_fp_pool_size": 6,
+        "tpe_fp_topk": 2,
+        "tpe_fp_bottomk": 2,
+        "aligned_min_tac": 0.12,
+        "aligned_w_fcs_gt": 0.5,
+        "aligned_w_batt_gt": 0.5,
+        "aligned_tac_tail_fraction": 0.1,
+        "aligned_dominance_threshold": 0.95,
+        "aligned_soc_dominance_threshold": 0.85,
+        "aligned_min_h2_fraction": 0.25,
+        "aligned_h2_perturbation_ratio": 0.2,
+        "aligned_mt_envelope_quantile": 0.01,
+        "aligned_mt_seed": 0,
+        "aligned_mt_sobol": 2048,
+        "aligned_mt_top_k": 5,
+        "aligned_mt_de_maxiter": 60,
+        "aligned_mt_de_popsize": 15,
+        "aligned_mt_eps_up": 0.01,
+        "aligned_mt_min_sensitivity_h2": 0.5,
+        "aligned_mt_min_sensitivity_fcs": 0.25,
+        "aligned_mt_min_sensitivity_batt": 0.1,
+        "aligned_mt_min_sensitivity_soc": 0.2,
+        "aligned_mt_soc_oob_offset": 0.05,
+        "soc_low": 0.4,
+        "soc_high": 0.8
+      },
+      "training_source_audit": {
+        "FCHEV-EMS/common/fc_action.py": {
+          "training_sha256": "38549b9eef9372d4f0d4f2eaa09322b0e48e2d669c05ebd722352e4032c194cb",
+          "evaluation_sha256": "38549b9eef9372d4f0d4f2eaa09322b0e48e2d669c05ebd722352e4032c194cb",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/env.py": {
+          "training_sha256": "badf2c7d9868381c4186674c61826bc7099786d0f882e7289af5ebdae9962312",
+          "evaluation_sha256": "badf2c7d9868381c4186674c61826bc7099786d0f882e7289af5ebdae9962312",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/memory.py": {
+          "training_sha256": "f54194d88b5d40f7bbdf5e04754797c5d69aaaaea639aee15e59b2fa094f460f",
+          "evaluation_sha256": "f54194d88b5d40f7bbdf5e04754797c5d69aaaaea639aee15e59b2fa094f460f",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/network.py": {
+          "training_sha256": "f8acccd67105cd747e94eb6bbf6cf284246dd137ee759cf7103caa2ac745eec1",
+          "evaluation_sha256": "f8acccd67105cd747e94eb6bbf6cf284246dd137ee759cf7103caa2ac745eec1",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/utils.py": {
+          "training_sha256": "199e51bc198740f8280e18dc2fb737c0b0410b851012dd82a6308d593fd374d3",
+          "evaluation_sha256": "199e51bc198740f8280e18dc2fb737c0b0410b851012dd82a6308d593fd374d3",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/paper_fuel_economy.py": {
+          "training_sha256": "598ecf189aa160454f95de6cb70b0f33274edfea8bc4b754002f61e55936e822",
+          "evaluation_sha256": "598ecf189aa160454f95de6cb70b0f33274edfea8bc4b754002f61e55936e822",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/runner.py": {
+          "training_sha256": "c3df109d0390c5bfbc082a225d967c1b4d229db7811175b258d6266852fb07f2",
+          "evaluation_sha256": "c3df109d0390c5bfbc082a225d967c1b4d229db7811175b258d6266852fb07f2",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/evaluate.py": {
+          "training_sha256": "782e9c2639088703ec82f3adf5fb1e5bbfcd7e3e5bf2b21fe5b96830c1431efe",
+          "evaluation_sha256": "782e9c2639088703ec82f3adf5fb1e5bbfcd7e3e5bf2b21fe5b96830c1431efe",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/arguments.py": {
+          "training_sha256": "57c4ba6d0199d5814cc2eddc6ef0c15da90433b3e5f4e7cca6054ac1f734e798",
+          "evaluation_sha256": "57c4ba6d0199d5814cc2eddc6ef0c15da90433b3e5f4e7cca6054ac1f734e798",
+          "unchanged": true
+        },
+        "FCHEV-EMS/sac.py": {
+          "training_sha256": "956ae002d05714851e90cc361a009f0839369f1c894c95733a73679024030dd6",
+          "evaluation_sha256": "956ae002d05714851e90cc361a009f0839369f1c894c95733a73679024030dd6",
+          "unchanged": true
+        },
+        "FCHEV-EMS/FCHEV_SOH.py": {
+          "training_sha256": "961812a450ba70c4baebb977c73aec2c98b80e8703ff52731196180e5f7d820e",
+          "evaluation_sha256": "961812a450ba70c4baebb977c73aec2c98b80e8703ff52731196180e5f7d820e",
+          "unchanged": true
+        },
+        "FCHEV-EMS/Battery.py": {
+          "training_sha256": "83d522326ac15f1969d769110a565fa447e369fa3b1433c03456600b0272112d",
+          "evaluation_sha256": "83d522326ac15f1969d769110a565fa447e369fa3b1433c03456600b0272112d",
+          "unchanged": true
+        },
+        "FCHEV-EMS/power_constraints.py": {
+          "training_sha256": "cc5ba4e4b4ce5abca2ca712f7b465906303a2ef0742e8d1a854248acb6ec99a3",
+          "evaluation_sha256": "cc5ba4e4b4ce5abca2ca712f7b465906303a2ef0742e8d1a854248acb6ec99a3",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/runner_ldri.py": {
+          "training_sha256": "8b2ca68253bd9f4fe2ff0474a44fa337c8963c21093a4179dd7086d1c1bf4ec1",
+          "evaluation_sha256": "8b2ca68253bd9f4fe2ff0474a44fa337c8963c21093a4179dd7086d1c1bf4ec1",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/env_ldri.py": {
+          "training_sha256": "b175c4b4c3049fac4cf0c5600aede1752e8b3e689a82a3b2376205b77461c00b",
+          "evaluation_sha256": "b175c4b4c3049fac4cf0c5600aede1752e8b3e689a82a3b2376205b77461c00b",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/candidate_validation.py": {
+          "training_sha256": "a724f405dd02e365308c240f86d30813ee51685949b360093890353803af63d4",
+          "evaluation_sha256": "a724f405dd02e365308c240f86d30813ee51685949b360093890353803af63d4",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/validated_workflow.py": {
+          "training_sha256": "57af98daf186d53c37279240ff35065e52c141b205ca0c87cdda4c829efeab8f",
+          "evaluation_sha256": "57af98daf186d53c37279240ff35065e52c141b205ca0c87cdda4c829efeab8f",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/baseline_import.py": {
+          "training_sha256": "ece20359ce3fcda0d8669c89ce2e8140d6a294b712c4501dd8c3fbef9fb17aba",
+          "evaluation_sha256": "ece20359ce3fcda0d8669c89ce2e8140d6a294b712c4501dd8c3fbef9fb17aba",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/policy_evidence.py": {
+          "training_sha256": "8860167d21b9712dc31311f96b95d590ff1de7bc7a594a4a59775b8b9e2db071",
+          "evaluation_sha256": "8860167d21b9712dc31311f96b95d590ff1de7bc7a594a4a59775b8b9e2db071",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/scenario_validation.py": {
+          "training_sha256": "e0d1c11bed4fe8ead63cd8d92aef41084b4b23ac6e7e445caf0e90de461ed5b9",
+          "evaluation_sha256": "e0d1c11bed4fe8ead63cd8d92aef41084b4b23ac6e7e445caf0e90de461ed5b9",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/cycle_segments.py": {
+          "training_sha256": "d5cf54a70a852e547e0e2ccfc425bbf95d5c09c292d18a74778efeddc6d6998e",
+          "evaluation_sha256": "d5cf54a70a852e547e0e2ccfc425bbf95d5c09c292d18a74778efeddc6d6998e",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/power_behavior.py": {
+          "training_sha256": "ad5eab68b8f6a025f0f7eddc255ac414b9c01507788a519c1dc84a62b41cb359",
+          "evaluation_sha256": "ad5eab68b8f6a025f0f7eddc255ac414b9c01507788a519c1dc84a62b41cb359",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/adoption_validation.py": {
+          "training_sha256": "70e1f82dfbba10abe86e95d6a11d5efbcc2d1d224fe06fd473c1e0712130f2ba",
+          "evaluation_sha256": "70e1f82dfbba10abe86e95d6a11d5efbcc2d1d224fe06fd473c1e0712130f2ba",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/training_initial_states.py": {
+          "training_sha256": "2d51d3a1b60a238d6106ee50ace8ed798fe0368c9af23f9f069df31969375352",
+          "evaluation_sha256": "2d51d3a1b60a238d6106ee50ace8ed798fe0368c9af23f9f069df31969375352",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/env_physics_facts.py": {
+          "training_sha256": "369768807511d9516368f0599567dfc42842d228923c19edb1fde918ed9a0e5e",
+          "evaluation_sha256": "369768807511d9516368f0599567dfc42842d228923c19edb1fde918ed9a0e5e",
+          "unchanged": true
+        },
+        "project-data/standard_driving_cycles/mat-data/Standard_WLTC_WVUINTER.mat": {
+          "training_sha256": "c9f1b0062855e6c9af47d09771a35e7e03f1939d3b35e83e2feaa2e336d6da52",
+          "evaluation_sha256": "c9f1b0062855e6c9af47d09771a35e7e03f1939d3b35e83e2feaa2e336d6da52",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/P_fc_stack_nexo.mat": {
+          "training_sha256": "11d8c9516aa72223b4889564e0b08c830787c025ecd98425e16e5f33ea550c77",
+          "evaluation_sha256": "11d8c9516aa72223b4889564e0b08c830787c025ecd98425e16e5f33ea550c77",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/mot_trq_max_nexo.mat": {
+          "training_sha256": "4195295c4985bc4180aed5ed68f9f4bd97cc856514faec99de615bc04d1dcacd",
+          "evaluation_sha256": "4195295c4985bc4180aed5ed68f9f4bd97cc856514faec99de615bc04d1dcacd",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/dcdc_eff_nexo.mat": {
+          "training_sha256": "7acfccbb6e903750ddcee7bca96ebe6503c7cc42432f99fba64bd13af0077a3d",
+          "evaluation_sha256": "7acfccbb6e903750ddcee7bca96ebe6503c7cc42432f99fba64bd13af0077a3d",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/T_mot_nexo.mat": {
+          "training_sha256": "7c486140f1afec090f205d2a0966122bbca2b31d80cf8f5af4aed56b476660c3",
+          "evaluation_sha256": "7c486140f1afec090f205d2a0966122bbca2b31d80cf8f5af4aed56b476660c3",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/W_mot_nexo.mat": {
+          "training_sha256": "e5ff40fbcaea852661d4bedde9841ddb9089aabac93579832e093978e1108567",
+          "evaluation_sha256": "e5ff40fbcaea852661d4bedde9841ddb9089aabac93579832e093978e1108567",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/mot_eff_nexo.mat": {
+          "training_sha256": "86555c109a009574953b7219ebc0a8cf4562253b131555bcd4113b5bdc496940",
+          "evaluation_sha256": "86555c109a009574953b7219ebc0a8cf4562253b131555bcd4113b5bdc496940",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/Eff_fc_nexo.mat": {
+          "training_sha256": "3ee5516566f49946ad961b02bd1106edd94f1041324a38e55d9fb94ad1ea2e5a",
+          "evaluation_sha256": "3ee5516566f49946ad961b02bd1106edd94f1041324a38e55d9fb94ad1ea2e5a",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/mot_trq_min_nexo.mat": {
+          "training_sha256": "660f3ad14f66d6c47c73fbfdae187c1bafc2286bf13856fb2b5571bd30cc5e85",
+          "evaluation_sha256": "660f3ad14f66d6c47c73fbfdae187c1bafc2286bf13856fb2b5571bd30cc5e85",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/P_DCDC.mat": {
+          "training_sha256": "c3fd00d66cae553a32651a95a0fbb01d4e5e0834184075ae2c23144d7333ed06",
+          "evaluation_sha256": "c3fd00d66cae553a32651a95a0fbb01d4e5e0834184075ae2c23144d7333ed06",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/fce_eff.mat": {
+          "training_sha256": "5061c1857aa7b20d6213f1e2641c689e975403ec455a752314f0959553425ee5",
+          "evaluation_sha256": "5061c1857aa7b20d6213f1e2641c689e975403ec455a752314f0959553425ee5",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/P_fc_sys_nexo.mat": {
+          "training_sha256": "360341729bff29b3e0aba3aee8d4a34821e51bb5ed9a9145c9df61961bcca6f6",
+          "evaluation_sha256": "360341729bff29b3e0aba3aee8d4a34821e51bb5ed9a9145c9df61961bcca6f6",
+          "unchanged": true
+        },
+        "project-data/Battery_data/ocv_new.pkl": {
+          "training_sha256": "169dbfbfe372557c034a13532ca9595f5cea34218fa4cd8d57a706930af01855",
+          "evaluation_sha256": "169dbfbfe372557c034a13532ca9595f5cea34218fa4cd8d57a706930af01855",
+          "unchanged": true
+        },
+        "project-data/Battery_data/r_in.pkl": {
+          "training_sha256": "c83ac06d9ccb8b923069bdb84ec43fc760ee073ccfb68ff4d5ccb0971fcdb90c",
+          "evaluation_sha256": "c83ac06d9ccb8b923069bdb84ec43fc760ee073ccfb68ff4d5ccb0971fcdb90c",
+          "unchanged": true
+        },
+        "results/aroma_runs/seed1_obscur_20261018_061824_704722118/aroma_matched_reward.py": {
+          "training_sha256": "10320f1ec52dc051f5699256d893a4c028651c09bb2197e891f6bd5585522455",
+          "evaluation_sha256": "b95c61ee2f222dd2399f1b1e09a026269dbe8eede6790d5cb286fcb4333376e1",
+          "unchanged": false
+        },
+        "FCHEV-EMS/aroma/development_validation.py": {
+          "training_sha256": "25db2b70760c303b109e6b1d3d71369f15233fd326c781ef27170f740fdb5851",
+          "evaluation_sha256": "25db2b70760c303b109e6b1d3d71369f15233fd326c781ef27170f740fdb5851",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/operating_cost.py": {
+          "training_sha256": "2a8c344a74117687ee171ad5e28f8254ceac42dc114b78a18d12282a9e812306",
+          "evaluation_sha256": "2a8c344a74117687ee171ad5e28f8254ceac42dc114b78a18d12282a9e812306",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/reward_terms.py": {
+          "training_sha256": "2112baf7033412c92d114942f27f7471ab40e4c8a9c5458bf613a759becdd3f3",
+          "evaluation_sha256": "2112baf7033412c92d114942f27f7471ab40e4c8a9c5458bf613a759becdd3f3",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/sequential_workflow.py": {
+          "training_sha256": "d4d99255637272b2ca9180faa5a03a22c91d08d7b031eb14e48c5d824d3ced2a",
+          "evaluation_sha256": "d4d99255637272b2ca9180faa5a03a22c91d08d7b031eb14e48c5d824d3ced2a",
+          "unchanged": true
+        }
+      }
+    },
+    "gpt_seed21_iter006_ep399": {
+      "agent": "gpt",
+      "seed": 21,
+      "iteration": 6,
+      "run": "results/aroma_runs/seed21_obscur_20261018_061841_504107713/search/20261018_061841_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed21_obscur_seq_v3_catalog_iter6",
+      "runs": [
+        "results/aroma_runs/seed21_obscur_20261018_061841_504107713/search/20261018_061841_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed21_obscur_seq_v3_catalog_iter6"
+      ],
+      "trial": "results/aroma_runs/seed21_obscur_20261018_061841_504107713/search/20261018_061841_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed21_obscur_seq_v3_catalog_iter6/trials/23f5cc865e6f304c337e5daf",
+      "candidate_id": "f478febda6ac468c4fbed03600d3f2daeef631b417ce5bb0284793e3f09a0512",
+      "adoption_decision": "retain_champion",
+      "verdict": {
+        "status": "fail",
+        "checks": {
+          "total_cost_strictly_improved": false,
+          "charge_sustaining": true,
+          "fuel_within_guard": true,
+          "battery_within_guard": true
+        },
+        "checkpoint_episode": 399,
+        "cost_unit": "USD per 100 km",
+        "total_cost_delta_usd": 2.904297942963588,
+        "cost_delta_usd": {
+          "h2_usd": -0.5476932920697388,
+          "fc_usd": 3.7041055192543695,
+          "batt_usd": -0.25211428422104376
+        },
+        "soc_drift": 0.04738613203043218,
+        "fuel_delta_gkm": -0.7824189886710542,
+        "fc_loss_delta": 2.938200003366198e-05,
+        "batt_loss_delta": -3.207511076130931e-05,
+        "guards": {
+          "reference": "baseline",
+          "max_fuel_increase_fraction": 0.05,
+          "max_batt_increase_fraction": 0.1,
+          "fuel_gkm_max": 12.139458655511469,
+          "batt_loss_max": 0.0005920614661019674,
+          "soc_drift_abs_max": 0.05
+        },
+        "guard_reference": "same_as_cost_reference",
+        "comparison_basis": "matched_fresh_training"
+      },
+      "recorded_ep399": {
+        "fuel_gkm": 10.778970207054153,
+        "fc_loss": 0.00020251199996335068,
+        "batt_loss": 0.0005061625856950247,
+        "soc_in_bounds": 100.0,
+        "soc_min": 0.5496951319048562,
+        "soc_max": 0.6573778075885166
+      },
+      "recorded_cost": {
+        "h2_usd": 7.545279144937907,
+        "fc_usd": 25.530114216870658,
+        "batt_usd": 3.978499682872628,
+        "degradation_usd": 29.508613899743285,
+        "total_usd": 37.053893044681196,
+        "unit": "USD per 100 km"
+      },
+      "recorded_fuel_breakdown": {
+        "raw_h2_gkm": 10.869936322831157,
+        "soc_correction_gkm": -0.09096611577700406,
+        "soc_final": 0.6473861320304322,
+        "soc_final_minus_initial": 0.04738613203043218,
+        "unaccepted_fc_kwh": 0.00028928327826199487,
+        "unaccepted_regen_kwh": 0.0
+      },
+      "actor_path": "results/aroma_runs/seed21_obscur_20261018_061841_504107713/search/20261018_061841_SAC_Standard_WLTC_WVUINTER_wsoc500p0_iter6_chunk400_fb50_llmopenai_gpt-5p2+gpt-5-mini_multiagent_seed21_obscur_seq_v3_catalog_iter6/trials/23f5cc865e6f304c337e5daf/models/iter_001/Standard_WLTC_WVUINTER/net_params/actor_iter001_ep399.pkl",
+      "actor_sha256": "cd15b73f1a5a7140898d9e718f315820e4a4ba558abda7e1dcd2c48550d5c244",
+      "conditions": {
+        "scenario_name": "Standard_WLTC_WVUINTER",
+        "MODE": "CS",
+        "soc0": 0.6,
+        "soc_target": 0.6,
+        "training_initial_states": "fixed",
+        "w_soc": 500.0,
+        "failure_cost_per_step": 1000.0,
+        "unserved_cost_per_kw": 50.0,
+        "obs_norm": "fixed",
+        "obs_speed_scale": 40.0,
+        "obs_timing": "current",
+        "obs_acc_scale": 4.0,
+        "w_h2": 10.0,
+        "search_plan": "archive",
+        "development_cycles": [],
+        "development_max_regression": 0.0,
+        "critic_layernorm": true,
+        "actor_layernorm": false,
+        "ramp_limit_kw": 10.0,
+        "per": true,
+        "per_alpha": 0.6,
+        "per_beta0": 0.4,
+        "per_beta_steps": 0,
+        "per_eps": 1e-06,
+        "w_fc": 4275000.0,
+        "w_batt": 1116000.0,
+        "eq_h2_batt_coef": 0.0164,
+        "DRL": "SAC",
+        "policy": "Gaussian",
+        "max_episodes": 500,
+        "start_episode": 0,
+        "episode_steps": null,
+        "batch_size": 256,
+        "buffer_size": 500000,
+        "gamma": 0.995,
+        "tau": 0.005,
+        "alpha": 1.0,
+        "auto_tune": true,
+        "policy_delay": 1,
+        "lr_critic": 0.0003,
+        "lr_critic_min": 0.0001,
+        "lr_actor": 0.0001,
+        "lr_actor_min": 2e-05,
+        "lr_alpha": 0.0002,
+        "target_entropy_scale": 2.0,
+        "lr_alpha_min": 5e-05,
+        "const_lr": false,
+        "lr_schedule_episodes": 400,
+        "lr_restart_cycles": 1,
+        "lr_warmup_ratio": 0.0,
+        "auto_lr_on_reward_patch": false,
+        "lr_auto_scale_floor": 0.55,
+        "lr_auto_scale_ceiling": 1.1,
+        "lr_auto_warmup_min": 0.1,
+        "lr_auto_warmup_max": 0.2,
+        "lr_auto_warmup_gain": 0.1,
+        "cuda": true,
+        "random_seed": true,
+        "seed": 21,
+        "load_or_not": false,
+        "load_episode": 0,
+        "load_scenario_name": "",
+        "load_dir": "",
+        "refinement_protocol": "sequential",
+        "proposal_attempts": 10,
+        "cost_scale_max_ratio": 1.0,
+        "artifact_detail": "compact",
+        "scenario_validation": false,
+        "cycle_segment_validation": false,
+        "baseline_reward_file": "FCHEV-EMS/aroma/agentEMS_val_base.py",
+        "candidate_pool_size": 1,
+        "candidate_attempts": 10,
+        "pilot_episodes": 0,
+        "unreviewed_candidate_policy": "record",
+        "confirmation_seeds": 1,
+        "cost_max_fuel_increase": 0.05,
+        "cost_max_batt_increase": 0.1,
+        "reward_term_catalog": true,
+        "cost_max_soc_drift": 0.05,
+        "edit_base_max_stale": 2,
+        "validation_min_improvement_gkm": 0.0,
+        "validation_min_improvement_fraction": 0.0,
+        "validation_terminal_soc_error": 0.02,
+        "validation_scenario_soc_error": 0.02,
+        "validation_unaccepted_energy_kwh": 0.0,
+        "validation_unaccepted_peak_kw": 0.0,
+        "validation_unaccepted_peak_slack_kw": 0.5,
+        "validation_unaccepted_energy_slack_kwh": 0.001,
+        "validation_condition_soc_tolerance": 0.005,
+        "validation_condition_fuel_regression": 0.05,
+        "validation_max_degradation_ratio": 1.0,
+        "validation_min_in_bounds": 98.0,
+        "chunk_episodes": 400,
+        "feedback_process_episodes": 50,
+        "reset_agent_on_patch": true,
+        "reward_module": "aroma_matched_reward",
+        "reward_file": "results/aroma_runs/seed21_obscur_20261018_061841_504107713/aroma_matched_reward.py",
+        "multi_agent_review": true,
+        "debate_rounds": 1,
+        "parse_retries": 10,
+        "tpe_retries": 20,
+        "tpe_soc_in_bounds_floor": 98.0,
+        "tpe_fp_pool_size": 6,
+        "tpe_fp_topk": 2,
+        "tpe_fp_bottomk": 2,
+        "aligned_min_tac": 0.12,
+        "aligned_w_fcs_gt": 0.5,
+        "aligned_w_batt_gt": 0.5,
+        "aligned_tac_tail_fraction": 0.1,
+        "aligned_dominance_threshold": 0.95,
+        "aligned_soc_dominance_threshold": 0.85,
+        "aligned_min_h2_fraction": 0.25,
+        "aligned_h2_perturbation_ratio": 0.2,
+        "aligned_mt_envelope_quantile": 0.01,
+        "aligned_mt_seed": 0,
+        "aligned_mt_sobol": 2048,
+        "aligned_mt_top_k": 5,
+        "aligned_mt_de_maxiter": 60,
+        "aligned_mt_de_popsize": 15,
+        "aligned_mt_eps_up": 0.01,
+        "aligned_mt_min_sensitivity_h2": 0.5,
+        "aligned_mt_min_sensitivity_fcs": 0.25,
+        "aligned_mt_min_sensitivity_batt": 0.1,
+        "aligned_mt_min_sensitivity_soc": 0.2,
+        "aligned_mt_soc_oob_offset": 0.05,
+        "soc_low": 0.4,
+        "soc_high": 0.8
+      },
+      "training_source_audit": {
+        "FCHEV-EMS/common/fc_action.py": {
+          "training_sha256": "38549b9eef9372d4f0d4f2eaa09322b0e48e2d669c05ebd722352e4032c194cb",
+          "evaluation_sha256": "38549b9eef9372d4f0d4f2eaa09322b0e48e2d669c05ebd722352e4032c194cb",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/env.py": {
+          "training_sha256": "badf2c7d9868381c4186674c61826bc7099786d0f882e7289af5ebdae9962312",
+          "evaluation_sha256": "badf2c7d9868381c4186674c61826bc7099786d0f882e7289af5ebdae9962312",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/memory.py": {
+          "training_sha256": "f54194d88b5d40f7bbdf5e04754797c5d69aaaaea639aee15e59b2fa094f460f",
+          "evaluation_sha256": "f54194d88b5d40f7bbdf5e04754797c5d69aaaaea639aee15e59b2fa094f460f",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/network.py": {
+          "training_sha256": "f8acccd67105cd747e94eb6bbf6cf284246dd137ee759cf7103caa2ac745eec1",
+          "evaluation_sha256": "f8acccd67105cd747e94eb6bbf6cf284246dd137ee759cf7103caa2ac745eec1",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/utils.py": {
+          "training_sha256": "199e51bc198740f8280e18dc2fb737c0b0410b851012dd82a6308d593fd374d3",
+          "evaluation_sha256": "199e51bc198740f8280e18dc2fb737c0b0410b851012dd82a6308d593fd374d3",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/paper_fuel_economy.py": {
+          "training_sha256": "598ecf189aa160454f95de6cb70b0f33274edfea8bc4b754002f61e55936e822",
+          "evaluation_sha256": "598ecf189aa160454f95de6cb70b0f33274edfea8bc4b754002f61e55936e822",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/runner.py": {
+          "training_sha256": "c3df109d0390c5bfbc082a225d967c1b4d229db7811175b258d6266852fb07f2",
+          "evaluation_sha256": "c3df109d0390c5bfbc082a225d967c1b4d229db7811175b258d6266852fb07f2",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/evaluate.py": {
+          "training_sha256": "782e9c2639088703ec82f3adf5fb1e5bbfcd7e3e5bf2b21fe5b96830c1431efe",
+          "evaluation_sha256": "782e9c2639088703ec82f3adf5fb1e5bbfcd7e3e5bf2b21fe5b96830c1431efe",
+          "unchanged": true
+        },
+        "FCHEV-EMS/common/arguments.py": {
+          "training_sha256": "57c4ba6d0199d5814cc2eddc6ef0c15da90433b3e5f4e7cca6054ac1f734e798",
+          "evaluation_sha256": "57c4ba6d0199d5814cc2eddc6ef0c15da90433b3e5f4e7cca6054ac1f734e798",
+          "unchanged": true
+        },
+        "FCHEV-EMS/sac.py": {
+          "training_sha256": "956ae002d05714851e90cc361a009f0839369f1c894c95733a73679024030dd6",
+          "evaluation_sha256": "956ae002d05714851e90cc361a009f0839369f1c894c95733a73679024030dd6",
+          "unchanged": true
+        },
+        "FCHEV-EMS/FCHEV_SOH.py": {
+          "training_sha256": "961812a450ba70c4baebb977c73aec2c98b80e8703ff52731196180e5f7d820e",
+          "evaluation_sha256": "961812a450ba70c4baebb977c73aec2c98b80e8703ff52731196180e5f7d820e",
+          "unchanged": true
+        },
+        "FCHEV-EMS/Battery.py": {
+          "training_sha256": "83d522326ac15f1969d769110a565fa447e369fa3b1433c03456600b0272112d",
+          "evaluation_sha256": "83d522326ac15f1969d769110a565fa447e369fa3b1433c03456600b0272112d",
+          "unchanged": true
+        },
+        "FCHEV-EMS/power_constraints.py": {
+          "training_sha256": "cc5ba4e4b4ce5abca2ca712f7b465906303a2ef0742e8d1a854248acb6ec99a3",
+          "evaluation_sha256": "cc5ba4e4b4ce5abca2ca712f7b465906303a2ef0742e8d1a854248acb6ec99a3",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/runner_ldri.py": {
+          "training_sha256": "8b2ca68253bd9f4fe2ff0474a44fa337c8963c21093a4179dd7086d1c1bf4ec1",
+          "evaluation_sha256": "8b2ca68253bd9f4fe2ff0474a44fa337c8963c21093a4179dd7086d1c1bf4ec1",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/env_ldri.py": {
+          "training_sha256": "b175c4b4c3049fac4cf0c5600aede1752e8b3e689a82a3b2376205b77461c00b",
+          "evaluation_sha256": "b175c4b4c3049fac4cf0c5600aede1752e8b3e689a82a3b2376205b77461c00b",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/candidate_validation.py": {
+          "training_sha256": "a724f405dd02e365308c240f86d30813ee51685949b360093890353803af63d4",
+          "evaluation_sha256": "a724f405dd02e365308c240f86d30813ee51685949b360093890353803af63d4",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/validated_workflow.py": {
+          "training_sha256": "57af98daf186d53c37279240ff35065e52c141b205ca0c87cdda4c829efeab8f",
+          "evaluation_sha256": "57af98daf186d53c37279240ff35065e52c141b205ca0c87cdda4c829efeab8f",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/baseline_import.py": {
+          "training_sha256": "ece20359ce3fcda0d8669c89ce2e8140d6a294b712c4501dd8c3fbef9fb17aba",
+          "evaluation_sha256": "ece20359ce3fcda0d8669c89ce2e8140d6a294b712c4501dd8c3fbef9fb17aba",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/policy_evidence.py": {
+          "training_sha256": "8860167d21b9712dc31311f96b95d590ff1de7bc7a594a4a59775b8b9e2db071",
+          "evaluation_sha256": "8860167d21b9712dc31311f96b95d590ff1de7bc7a594a4a59775b8b9e2db071",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/scenario_validation.py": {
+          "training_sha256": "e0d1c11bed4fe8ead63cd8d92aef41084b4b23ac6e7e445caf0e90de461ed5b9",
+          "evaluation_sha256": "e0d1c11bed4fe8ead63cd8d92aef41084b4b23ac6e7e445caf0e90de461ed5b9",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/cycle_segments.py": {
+          "training_sha256": "d5cf54a70a852e547e0e2ccfc425bbf95d5c09c292d18a74778efeddc6d6998e",
+          "evaluation_sha256": "d5cf54a70a852e547e0e2ccfc425bbf95d5c09c292d18a74778efeddc6d6998e",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/power_behavior.py": {
+          "training_sha256": "ad5eab68b8f6a025f0f7eddc255ac414b9c01507788a519c1dc84a62b41cb359",
+          "evaluation_sha256": "ad5eab68b8f6a025f0f7eddc255ac414b9c01507788a519c1dc84a62b41cb359",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/adoption_validation.py": {
+          "training_sha256": "70e1f82dfbba10abe86e95d6a11d5efbcc2d1d224fe06fd473c1e0712130f2ba",
+          "evaluation_sha256": "70e1f82dfbba10abe86e95d6a11d5efbcc2d1d224fe06fd473c1e0712130f2ba",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/training_initial_states.py": {
+          "training_sha256": "2d51d3a1b60a238d6106ee50ace8ed798fe0368c9af23f9f069df31969375352",
+          "evaluation_sha256": "2d51d3a1b60a238d6106ee50ace8ed798fe0368c9af23f9f069df31969375352",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/env_physics_facts.py": {
+          "training_sha256": "369768807511d9516368f0599567dfc42842d228923c19edb1fde918ed9a0e5e",
+          "evaluation_sha256": "369768807511d9516368f0599567dfc42842d228923c19edb1fde918ed9a0e5e",
+          "unchanged": true
+        },
+        "project-data/standard_driving_cycles/mat-data/Standard_WLTC_WVUINTER.mat": {
+          "training_sha256": "c9f1b0062855e6c9af47d09771a35e7e03f1939d3b35e83e2feaa2e336d6da52",
+          "evaluation_sha256": "c9f1b0062855e6c9af47d09771a35e7e03f1939d3b35e83e2feaa2e336d6da52",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/P_fc_stack_nexo.mat": {
+          "training_sha256": "11d8c9516aa72223b4889564e0b08c830787c025ecd98425e16e5f33ea550c77",
+          "evaluation_sha256": "11d8c9516aa72223b4889564e0b08c830787c025ecd98425e16e5f33ea550c77",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/mot_trq_max_nexo.mat": {
+          "training_sha256": "4195295c4985bc4180aed5ed68f9f4bd97cc856514faec99de615bc04d1dcacd",
+          "evaluation_sha256": "4195295c4985bc4180aed5ed68f9f4bd97cc856514faec99de615bc04d1dcacd",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/dcdc_eff_nexo.mat": {
+          "training_sha256": "7acfccbb6e903750ddcee7bca96ebe6503c7cc42432f99fba64bd13af0077a3d",
+          "evaluation_sha256": "7acfccbb6e903750ddcee7bca96ebe6503c7cc42432f99fba64bd13af0077a3d",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/T_mot_nexo.mat": {
+          "training_sha256": "7c486140f1afec090f205d2a0966122bbca2b31d80cf8f5af4aed56b476660c3",
+          "evaluation_sha256": "7c486140f1afec090f205d2a0966122bbca2b31d80cf8f5af4aed56b476660c3",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/W_mot_nexo.mat": {
+          "training_sha256": "e5ff40fbcaea852661d4bedde9841ddb9089aabac93579832e093978e1108567",
+          "evaluation_sha256": "e5ff40fbcaea852661d4bedde9841ddb9089aabac93579832e093978e1108567",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/mot_eff_nexo.mat": {
+          "training_sha256": "86555c109a009574953b7219ebc0a8cf4562253b131555bcd4113b5bdc496940",
+          "evaluation_sha256": "86555c109a009574953b7219ebc0a8cf4562253b131555bcd4113b5bdc496940",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/Eff_fc_nexo.mat": {
+          "training_sha256": "3ee5516566f49946ad961b02bd1106edd94f1041324a38e55d9fb94ad1ea2e5a",
+          "evaluation_sha256": "3ee5516566f49946ad961b02bd1106edd94f1041324a38e55d9fb94ad1ea2e5a",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/mot_trq_min_nexo.mat": {
+          "training_sha256": "660f3ad14f66d6c47c73fbfdae187c1bafc2286bf13856fb2b5571bd30cc5e85",
+          "evaluation_sha256": "660f3ad14f66d6c47c73fbfdae187c1bafc2286bf13856fb2b5571bd30cc5e85",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/P_DCDC.mat": {
+          "training_sha256": "c3fd00d66cae553a32651a95a0fbb01d4e5e0834184075ae2c23144d7333ed06",
+          "evaluation_sha256": "c3fd00d66cae553a32651a95a0fbb01d4e5e0834184075ae2c23144d7333ed06",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/fce_eff.mat": {
+          "training_sha256": "5061c1857aa7b20d6213f1e2641c689e975403ec455a752314f0959553425ee5",
+          "evaluation_sha256": "5061c1857aa7b20d6213f1e2641c689e975403ec455a752314f0959553425ee5",
+          "unchanged": true
+        },
+        "project-data/FCHEV_data/P_fc_sys_nexo.mat": {
+          "training_sha256": "360341729bff29b3e0aba3aee8d4a34821e51bb5ed9a9145c9df61961bcca6f6",
+          "evaluation_sha256": "360341729bff29b3e0aba3aee8d4a34821e51bb5ed9a9145c9df61961bcca6f6",
+          "unchanged": true
+        },
+        "project-data/Battery_data/ocv_new.pkl": {
+          "training_sha256": "169dbfbfe372557c034a13532ca9595f5cea34218fa4cd8d57a706930af01855",
+          "evaluation_sha256": "169dbfbfe372557c034a13532ca9595f5cea34218fa4cd8d57a706930af01855",
+          "unchanged": true
+        },
+        "project-data/Battery_data/r_in.pkl": {
+          "training_sha256": "c83ac06d9ccb8b923069bdb84ec43fc760ee073ccfb68ff4d5ccb0971fcdb90c",
+          "evaluation_sha256": "c83ac06d9ccb8b923069bdb84ec43fc760ee073ccfb68ff4d5ccb0971fcdb90c",
+          "unchanged": true
+        },
+        "results/aroma_runs/seed21_obscur_20261018_061841_504107713/aroma_matched_reward.py": {
+          "training_sha256": "10320f1ec52dc051f5699256d893a4c028651c09bb2197e891f6bd5585522455",
+          "evaluation_sha256": "7efb9f2f1f946e7df9bda058ad94275a15278fd724ad34af472c3832629e1eaf",
+          "unchanged": false
+        },
+        "FCHEV-EMS/aroma/development_validation.py": {
+          "training_sha256": "25db2b70760c303b109e6b1d3d71369f15233fd326c781ef27170f740fdb5851",
+          "evaluation_sha256": "25db2b70760c303b109e6b1d3d71369f15233fd326c781ef27170f740fdb5851",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/operating_cost.py": {
+          "training_sha256": "2a8c344a74117687ee171ad5e28f8254ceac42dc114b78a18d12282a9e812306",
+          "evaluation_sha256": "2a8c344a74117687ee171ad5e28f8254ceac42dc114b78a18d12282a9e812306",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/reward_terms.py": {
+          "training_sha256": "2112baf7033412c92d114942f27f7471ab40e4c8a9c5458bf613a759becdd3f3",
+          "evaluation_sha256": "2112baf7033412c92d114942f27f7471ab40e4c8a9c5458bf613a759becdd3f3",
+          "unchanged": true
+        },
+        "FCHEV-EMS/aroma/sequential_workflow.py": {
+          "training_sha256": "d4d99255637272b2ca9180faa5a03a22c91d08d7b031eb14e48c5d824d3ced2a",
+          "evaluation_sha256": "d4d99255637272b2ca9180faa5a03a22c91d08d7b031eb14e48c5d824d3ced2a",
+          "unchanged": true
+        }
+      }
+    }
+  },
+  "deterministic_mean_action": true,
+  "learning": false,
+  "device": "cpu",
+  "metric": "paper_energy_explicit_initial_soc; total cost = LDRI/operating_cost.py",
+  "evaluation_script_sha256": "0d57ee021c056027d74cf36c4023a80b4c03c741c2bcdf23538586e0c77279b4",
+  "created_utc": "2026-10-19T18:59:45.618835+00:00",
+  "completed_utc": "2026-10-19T18:59:48.984636+00:00",
+  "actual_results": 20
+}
