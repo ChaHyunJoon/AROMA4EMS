@@ -60,25 +60,37 @@ cd FCHEV-EMS && python -m pytest aroma/tests -q
 
 ## Results bundle
 
-Rollout traces (`.mat`) and network checkpoints are too large for git. Download
-`aroma4ems-results.tar.gz` from the GitHub release and unpack it at the repository root. It adds files under
-`results/` at the paths that the tables in `results/` already reference:
+Rollout traces (`.mat`) are not stored in git. `aroma4ems-results.tar.gz` (GitHub release) holds the 16 traces
+plotted in Figs. 5-8: DP, rule-based EMS, baseline SAC and AROMA-SAC (seed 1, GPT, iteration 3) on UDDS, WVUSUB,
+LA92 and HWFET. Unpack it at the repository root, which places the files at the paths referenced by the tables in
+`results/`:
 
 ```bash
 tar -xzf aroma4ems-results.tar.gz      # from the repository root
 ```
 
+All other figures and tables of the paper are built from files already in git.
+
 ## Reproducing the paper
 
-### Figures and tables (needs the results bundle)
+### Figures and tables
 
 ```bash
 cd visualization
-jupyter execute paper_figs_multi_seed.ipynb
-jupyter execute paper_figs_seed1_gpt_iter3.ipynb
+jupyter execute paper_figs_seed1_gpt_iter3.ipynb   # Fig. 3, Figs. 5-8 (needs the results bundle)
+jupyter execute paper_figs_multi_seed.ipynb        # Fig. 4 and the four-seed tables
 ```
 
-Figures and tables are written to `visualization/paper_figures/`.
+Outputs are written to `visualization/paper_figures/`:
+
+| Paper | Output file (`paper_figures/pdf/`) |
+|---|---|
+| Fig. 3 | `seed1_gpt_iter3__fig06_training.pdf` |
+| Fig. 4 | `multi_seed_v3cat__driving_cost_hydrogen_degradation.pdf` (deployed policies); the best-iteration version is `multi_seed_v3cat_heldout_best__driving_cost_hydrogen_degradation.pdf` |
+| Figs. 5-8 | `seed1_gpt_iter3__fig09_timeseries_UDDS.pdf` ... `fig12_timeseries_HWFET.pdf` |
+
+The seed-41 operating-point figures in `paper_figs_multi_seed.ipynb` are not part of the paper. Their traces are
+not distributed, so those cells print a skip message.
 
 ### Benchmarks
 
@@ -114,15 +126,16 @@ directly, because some parser defaults in `arguments_ldri.py` differ from the pa
 `runs/`. LLM responses are not deterministic, so a new search does not repeat the proposals of the paper. The
 recorded searches are in `results/aroma_runs/`.
 
-### Re-evaluating a released policy
+### Evaluating a trained policy
 
-`results/evaluation_runs/*/manifest.json` lists every evaluated actor with its checkpoint path and SHA-256.
-`results/evaluation_runs/<run>/evaluate_all_iters.py` reproduces those rollouts. For a single actor:
+`results/evaluation_runs/*/manifest.json` lists every evaluated actor with its checkpoint path and SHA-256, and
+`results/evaluation_runs/<run>/evaluate_all_iters.py` is the script that produced the rollouts. Network
+checkpoints are not distributed. To evaluate an actor from a new search:
 
 ```bash
 cd FCHEV-EMS
 python eval_actor_cycles.py --eva_root ../runs/eval --label aroma --cycles Standard_UDDS \
-  --actor ../results/aroma_runs/<search>/search/<run>/trials/<trial>/models/iter_001/Standard_WLTC_WVUINTER/net_params/actor_iter001_ep399.pkl
+  --actor ../runs/<search>/search/<run>/trials/<trial>/models/iter_001/Standard_WLTC_WVUINTER/net_params/actor_iter001_ep399.pkl
 ```
 
 ## The eight searches
@@ -147,7 +160,7 @@ included.
 The code in this repository is the version that ran the two seed-1 searches. The searches of seeds 41/61/81 ran
 on an earlier revision of `aroma/candidate_validation.py`, `aroma/reward_terms.py` and
 `aroma/sequential_workflow.py`. The plant, SAC, benchmark and evaluation code is the same for all eight. Re-running
-the released policies, the rule-based EMS and DP with this code reproduces the stored rollouts exactly.
+the evaluated policies, the rule-based EMS and DP with this code reproduces the stored rollouts exactly.
 
 ## Acknowledgements
 
